@@ -224,7 +224,7 @@
     "monstercat": false,
     "waves": false,
     "noise_reduction": 0.25,
-    "input_delay": 2,
+    "input_delay": 4,
     "format-icons": [
       "▁",
       "▂",
