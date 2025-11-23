@@ -86,6 +86,34 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1113" height="554" alt="screenshot-2025-11-21_19-44-21" src="https://github.com/user-attachments/assets/437b7703-15df-4c76-a14a-b21b2d1b0dda" />
 
+## Screenshots V3 (min2-cava)
+- minimal setup (memory, tempature, hyprland/window are excluded)
+- mpris support , cava support, bluetooth and gtk icons out of tray box
+
+###### STEP1
+- use the following V3-min2 Install command for waybar config
+##### V3-min2 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min2-cava/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+###### STEP2
+- make sure libcava is installed 
+```bash
+yay -S libcava
+```
+###### STEP3
+- to make cava.sh script executable use following command 
+```bash
+chmod +x ~/.config/waybar/cava.sh
+```
+###### STEP4
+- restart waybar
+```bash
+omarchy-restart-waybar
+```
+<img width="818" height="79" alt="screenshot-2025-11-23_16-51-11" src="https://github.com/user-attachments/assets/2b3164b0-17e1-4a7a-992c-5c4fd0165d9d" />
+
+
 ## Screenshots V4
 - new waybar style with base config from V3 - please backup your config & style file before applying <br>
 - module informations: leftside (omarchy-menu, workspaces, hyprland/window) center (clock, idle_inhibtor, omarchy-update, recording) rightside (packman-updates and the rest) <br>
