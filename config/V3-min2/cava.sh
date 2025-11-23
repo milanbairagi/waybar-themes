@@ -16,7 +16,7 @@ done
 config_file="/tmp/polybar_cava_config"
 echo "
 [general]
-bars = 18
+bars = 24
 sleep_timer = 0
 
 [output]
