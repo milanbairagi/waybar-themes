@@ -8,8 +8,7 @@
   "width": 250,
   "modules-left": [
     "custom/omarchy",
-    "hyprland/workspaces",
-    "custom/cava"
+    "hyprland/workspaces"
     //"mpris",
     //"hyprland/window"
   ],
@@ -204,11 +203,6 @@
         ""
       ]
     }
-  },
-  "custom/cava": {
-    //"cava_config": "~/.config/cava/config",
-    "format": "{}",
-    "exec": "~/.config/waybar/cava.sh"
   },
   "mpris": {
     "format": "{player_icon}",
