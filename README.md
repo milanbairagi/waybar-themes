@@ -79,37 +79,26 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 
 ## Screenshots V3 (min2)
 - minimal setup (memory, tempature, hyprland/window are excluded)
-- mpris support , waybar-cava support, bluetooth and gtk icons out of tray box
-###### STEP1
-- before install waybar-cava , remove waybar-module-pacman (if not installed, start with Step 2)
-```bash
-yay -Rns waybar-module-pacman-updates-git
-```
-###### STEP2
-- Install waybar-cava:
-- confirm installation start prompt with <b>"A"</b> (ALL) and all further conformations with <b>yes</b>, even if it ask to remove waybar
-```bash
-yay -S waybar-cava
-```
+- mpris support , cava support, bluetooth and gtk icons out of tray box
 
-###### STEP3
-- re-install pacman-module
-```bash
-yay -S waybar-module-pacman-updates-git
-```
-###### STEP4
+###### STEP1
 - use the following V3-min2 Install command for waybar config
 ##### V3-min2 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
+###### STEP2
+- to make cava.sh script executable use following command 
+```bash
+chmod +x ~/.config/waybar/cava.sh
+```
+###### STEP3
+- restart waybar
+```bash
+omarchy-restart-waybar
+```
 <img width="795" height="33" alt="screenshot-2025-11-22_21-46-21" src="https://github.com/user-attachments/assets/927910e0-2256-41b5-9e94-ec73d7d524f0" />
 <img width="579" height="59" alt="screenshot-2025-11-22_21-48-55" src="https://github.com/user-attachments/assets/735fc497-37b4-4e54-bbae-41037e818aae" />
-
-
-
-
-
 
 ## Screenshots V4
 - new waybar style with base config from V3 - please backup your config & style file before applying <br>
