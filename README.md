@@ -80,7 +80,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ## Screenshots V3 (min2)
 - minimal setup (memory, tempature, hyprland/window are excluded)
 - mpris support , bluetooth and gtk icons out of tray box
-##### V3-min2 Install-command (copy and paste in your terminal): <br>
+##### V3-min2-cava Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
