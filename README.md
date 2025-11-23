@@ -84,7 +84,10 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="579" height="59" alt="screenshot-2025-11-22_21-48-55" src="https://github.com/user-attachments/assets/735fc497-37b4-4e54-bbae-41037e818aae" />
+<img width="1113" height="554" alt="screenshot-2025-11-21_19-44-21" src="https://github.com/user-attachments/assets/437b7703-15df-4c76-a14a-b21b2d1b0dda" />
+<img width="578" height="79" alt="screenshot-2025-11-23_11-30-29" src="https://github.com/user-attachments/assets/1f28a982-5072-406c-83c1-c9b23a834051" />
+
+
 
 ## Screenshots V4
 - new waybar style with base config from V3 - please backup your config & style file before applying <br>
