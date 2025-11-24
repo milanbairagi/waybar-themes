@@ -91,7 +91,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 - mpris support , cava support, bluetooth and gtk icons out of tray box
 
 ###### STEP1
-- use the following V3-min2 Install command for waybar config
+- use the following V3-min2-cava Install command for waybar config
 ##### V3-min2-cava Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min2-cava/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
