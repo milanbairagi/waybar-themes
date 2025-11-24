@@ -1,20 +1,11 @@
-#! /bin/bash
+#!/bin/bash
 
-bar="▁▂▃▄▅▆▇█"
-dict="s/;//g;"
-
-# creating "dictionary" to replace char with bar
-i=0
-while [ $i -lt ${#bar} ]
-do
-    dict="${dict}s/$i/${bar:$i:1}/g;"
-    i=$((i=i+1))
-done
-
+# Unicode bars (0–7)
+bars=(▁ ▂ ▃ ▄ ▅ ▆ ▇ █)
 
 # write cava config
-config_file="/tmp/polybar_cava_config"
-echo "
+config_file="/tmp/waybar_cava_config"
+cat > "$config_file" <<EOF
 [general]
 bars = 24
 framerate = 60
@@ -25,56 +16,47 @@ method = raw
 raw_target = /dev/stdout
 data_format = ascii
 ascii_max_range = 7
-" > $config_file
+EOF
 
-# Ensure script dies when Waybar reloads
+# kill cava when waybar kills this script
 trap "kill 0" EXIT
 
-# Convert cava digits to bars
-to_bars() {
-    local line="$1" output="" n
-    IFS=';' read -ra nums <<< "$line"
+pause_start=0
+
+convert_to_bars() {
+    IFS=';' read -ra nums <<< "$1"
+    out=""
     for n in "${nums[@]}"; do
-        case "$n" in
-            0) output+="▁" ;; 1) output+="▂" ;;
-            2) output+="▃" ;; 3) output+="▄" ;;
-            4) output+="▅" ;; 5) output+="▆" ;;
-            6) output+="▇" ;; 7) output+="█" ;;
-            *) output+="▁" ;;
-        esac
+        (( n >= 0 && n <= 7 )) || n=0
+        out+="${bars[$n]}"
     done
-    echo "$output"
+    printf '%s\n' "$out"
 }
 
-# Read cava frames
-cava -p "$config_file" | while IFS= read -r line; do
+cava -p "$config_file" | \
+while IFS= read -r line; do
     now=$(date +%s)
 
-    # silence → zeros only
+    # silence (only zeros)
     if [[ "$line" =~ ^(0;?)+$ ]]; then
-
-        # start timer
-        if [[ -z "$pause_start" ]]; then
+        if (( pause_start == 0 )); then
             pause_start=$now
         fi
 
-        elapsed=$(( now - pause_start ))
-
-        if (( elapsed >= 2 )); then
-            # hide module after 4 seconds
+        # hide after 2 seconds of silence
+        if (( now - pause_start >= 2 )); then
             echo ""
         else
-            # minimal bars during grace period
-            echo "$(to_bars "$line")"
+            convert_to_bars "$line"
         fi
 
         continue
     fi
 
-    # audio resumed → reset timer
-    unset pause_start
+    # audio back → reset timer
+    pause_start=0
 
-    # normal bars
-    echo "$(to_bars "$line")"
+    # print bars
+    convert_to_bars "$line"
 done
 
