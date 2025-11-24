@@ -27,7 +27,6 @@
     "bluetooth",
     "network",
     "pulseaudio",
-    "memory",
     "cpu",
     "battery"
   ],
@@ -117,11 +116,6 @@
   "cpu": {
     "interval": 2,
     "format": "󰍛 {usage}%",
-    "on-click": "omarchy-launch-or-focus-tui btop"
-  },
-  "memory": {
-    "interval": 2,
-    "format": " {percentage}%",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
@@ -215,7 +209,7 @@
     "on-click": "omarchy-launch-bluetooth"
   },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}",
     "on-click": "omarchy-launch-or-focus-tui wiremix",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",

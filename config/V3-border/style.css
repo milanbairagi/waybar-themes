@@ -90,7 +90,6 @@ font-size: 14px;
 #mpris,
 #tray,
 #cpu,
-#memory,
 #battery,
 #network,
 #bluetooth,
@@ -128,12 +127,10 @@ tooltip {
   font-size: 12px;
 }
 
-#bluetooth, #network {
-  margin-right: 4px;
-}
 
 #custom-updatespacman, #idle_inhibitor {
   margin-right: 4px;
+  margin: 0 10px;
 }
 
 .hidden {
