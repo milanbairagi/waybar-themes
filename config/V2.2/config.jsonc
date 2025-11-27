@@ -90,7 +90,7 @@
   },
    "hyprland/window": {
     "format": "{title} - {class}",
-    "max-length": 40,
+    "max-length": 85,
     "rewrite": {
       " - ": "", // if no window is focused, a single dash is displayed, this removes it
       "(.*?) - Chromium - chromium": "   $1 ",
@@ -162,7 +162,7 @@
   },
   "battery": {
     "format": "{capacity}% {icon}",
-    "format-discharging": "{icon}",
+    "format-discharging": "{capacity}% {icon}",
     "format-charging": "{icon}",
     "format-plugged": "{power}",
     "format-icons": {
@@ -223,7 +223,7 @@
         "format": "{}°",
         "tooltip": true,
         "interval": 1800,
-        "exec": "wttrbar --nerd --location yourlocation",
+        "exec": "wttrbar --nerd --location Hildesheim",
         "return-type": "json"
   },
   "pulseaudio": {

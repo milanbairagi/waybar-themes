@@ -39,7 +39,7 @@ tooltip {
 
 #left1{
   border-radius: 4px;
-  opacity: 1;
+  opacity: 0.95;
   border: 2px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
   margin: 0px;
@@ -74,7 +74,7 @@ tooltip {
   margin: 0px;
   padding: 0px 6px;
   border-radius: 4px;
-  opacity: 1;
+  opacity: 0.95;
   border: 2px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
  }
@@ -84,7 +84,7 @@ tooltip {
   margin: 0px;
   padding: 0px 6px;
   border-radius: 4px;
-  opacity: 1;
+  opacity: 0.95;
   border: 2px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
 }
@@ -95,7 +95,7 @@ tooltip {
   border: 2px solid alpha(@foreground, 0.8);
   border-radius: 4px;
   background-color: alpha(@background, 1);
-  opacity: 1;
+  opacity: 0.95;
   margin: 0px;
   padding: 1px 2px 1px;
 }
@@ -140,7 +140,7 @@ tooltip {
   margin: 2px;
   padding: 1px 0 1px;
   color: @foreground;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 #custom-omarchy {
@@ -154,6 +154,7 @@ tooltip {
 #tray-expander,
 #mpris,
 #cpu,
+#clock,
 #battery,
 #network,
 #backlight,
@@ -164,7 +165,7 @@ tooltip {
 #idle_inhibitor,
 #custom-screenrecording-indicator,
 #custom-updatespacman {
-  min-width: 12px;
+  min-width: 14px;
 }
 
 /* --- Hover right module  --- */
@@ -195,11 +196,6 @@ margin: 0 6px;
 padding: 1px 0 1px;
 }
 
-/* Center Specific Module */
-#window {
-margin: 0px;
-padding: 1px 0 1px;
-}
 
 /* Right Specific Module */
 #backlight, #bluetooth, #battery, #network, #pulseaudio, #cpu, #custom-weather, #clock {
