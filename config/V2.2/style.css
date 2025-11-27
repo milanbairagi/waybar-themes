@@ -200,7 +200,7 @@ padding: 1px 0 1px;
 
 /* Right Specific Module */
 #backlight, #bluetooth, #battery, #network, #pulseaudio, #cpu, #custom-weather, #clock {
-  margin: 0 0 0 14px;
+  margin: 0 0 0 10px;
   padding: 1px 0 1px;
 }
 
