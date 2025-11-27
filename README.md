@@ -40,6 +40,30 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="300" height="54" alt="screenshot-2025-09-18_22-45-54" src="https://github.com/user-attachments/assets/aa13ae41-6d40-407e-bbe8-cc04c5ff2124" />
 
+## Screenshots V2.2
+- new version of V1 to V2 series configs with some extras <br>
+###### STEP1
+- install wttrbar for weather module
+```bash
+yay -S wttrbar
+```
+###### STEP2
+##### V2.2 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/v2.2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+###### STEP3
+- after installing wttrbar, set your City location in config.json file and restart waybar  ,
+```bash
+ "custom/weather": {
+ ....
+    "exec": "wttrbar --nerd --location yourlocation,
+```
+```bash
+omarchy-restart-waybar
+```
+<img width="2560" height="748" alt="screenshot-2025-11-27_11-47-06" src="https://github.com/user-attachments/assets/2b0362dc-d522-4024-927f-d2d5f277f613" />
+
 ## Screenshots V3
 - new waybar Style (without red accents)
 - base config is from https://github.com/CobyPowers/omarchy/tree/master/config/waybar (Credits goes to https://github.com/CobyPowers ) , i added some functions according to my needs and changed the high <br>
