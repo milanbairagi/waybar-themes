@@ -92,6 +92,14 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="681" alt="screenshot-2025-11-24_21-24-40" src="https://github.com/user-attachments/assets/2e2c4598-086a-4362-8155-f8d92a2ba65a" />
 
+## Screenshots V3 (border2)
+- all shadow & border with minimal concept (wttbar, mpris, pacmanupdates, hyprland/window)
+##### V3-border2 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-border2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="875" height="418" alt="screenshot-2025-11-28_23-34-29" src="https://github.com/user-attachments/assets/b6ef82ca-5b09-4702-b2a2-760d06ca7918" />
+
 
 
 ## Screenshots V3 (trans)
