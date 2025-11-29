@@ -90,7 +90,8 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-border/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="2560" height="681" alt="screenshot-2025-11-24_21-24-40" src="https://github.com/user-attachments/assets/2e2c4598-086a-4362-8155-f8d92a2ba65a" />
+<img width="1920" height="276" alt="screenshot-2025-11-29_23-12-06" src="https://github.com/user-attachments/assets/c22adc45-9c7a-487d-bb0c-a011ee20e437" />
+
 
 ## Screenshots V3 (border2)
 - all shadow & border with minimal concept (wttbar, mpris, pacmanupdates, hyprland/window)
