@@ -111,6 +111,10 @@ margin-left: 4px;
   margin-right: 12px;
 }
 
+#custom-update {
+  margin-left: 0px;
+}
+
 tooltip {
   padding: 0.5px;
 }
