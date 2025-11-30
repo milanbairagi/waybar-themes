@@ -107,8 +107,10 @@ tooltip {
 }
 
 
+
 #custom-omarchy {
   padding: 1px 0 1px;
+  
 }
 
 /* --- General Modules --- */
@@ -159,6 +161,16 @@ tooltip {
 
 
 /* Specific Module */
+
+#custom-update, #idle_inhibitor, #custom-update, #custom-screenrecording-indicator, #custom-updatespacman {
+  color: @background;
+  background-color: alpha(@foreground, 0.4);
+  border-radius: 24px;
+  opacity: 1.0;
+  transition: all 0.3s ease-in-out;
+  padding: 0px 3px;
+  margin: 2px 3px;
+}
 
 
 #custom-omarchy {
@@ -269,13 +281,13 @@ animation: repeat;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  color: @foreground;
-   margin-left: 3px;
-   margin-right: 4px;
+  color: @background;
+   margin-left: 1px;
+   margin-right: 1px;
  }
 
 #idle_inhibitor.activated {
-  margin-right: 4px;
+  margin-right: 1px;
   color: #178b76;
   animation-name: blink-inhibitor;
   animation-duration: 1s;
