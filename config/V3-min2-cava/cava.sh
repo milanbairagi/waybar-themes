@@ -1,14 +1,11 @@
-#!/bin/bash
-
-# Unicode bars (0–7)
+#!/usr/bin/env bash
+set -u
 bars=(▁ ▂ ▃ ▄ ▅ ▆ ▇ █)
-
-# write cava config
 config_file="/tmp/waybar_cava_config"
 cat > "$config_file" <<EOF
 [general]
-bars = 24
-framerate = 60
+bars = 18
+framerate = 24
 autosens = 1
 
 [output]
@@ -18,45 +15,51 @@ data_format = ascii
 ascii_max_range = 7
 EOF
 
-# kill cava when waybar kills this script
-trap "kill 0" EXIT
-
+trap 'kill 0 2>/dev/null || true' EXIT
 pause_start=0
 
 convert_to_bars() {
-    IFS=';' read -ra nums <<< "$1"
-    out=""
+    local line="$1"
+    local IFS=';'
+    local -a nums
+    read -ra nums <<< "$line"
+    local out=""
+    local n
     for n in "${nums[@]}"; do
-        (( n >= 0 && n <= 7 )) || n=0
-        out+="${bars[$n]}"
+
+        if (( n < 0 || n > 7 )); then
+            n=0
+        fi
+        out+="${bars[n]}"
     done
     printf '%s\n' "$out"
 }
 
-cava -p "$config_file" | \
-while IFS= read -r line; do
-    now=$(date +%s)
+# fast check for "only zeros" (silence) using parameter expansion — no regex, no external tools
+is_silence() {
+    local l="${1//;/}"   # remove semicolons
+    # remove all 0 characters; if result is empty => only zeros
+    [[ -z "${l//0/}" ]]
+}
 
-    # silence (only zeros)
-    if [[ "$line" =~ ^(0;?)+$ ]]; then
+# Run cava and process its stdout
+cava -p "$config_file" 2>/dev/null | while IFS= read -r line || [[ -n "$line" ]]; do
+    # silence detection (cheap)
+    if is_silence "$line"; then
         if (( pause_start == 0 )); then
-            pause_start=$now
+            pause_start=$SECONDS
         fi
 
-        # hide after 2 seconds of silence
-        if (( now - pause_start >= 2 )); then
+        # hide after 2 seconds of continuous silence
+        if (( SECONDS - pause_start >= 2 )); then
             echo ""
         else
             convert_to_bars "$line"
         fi
-
         continue
     fi
 
-    # audio back → reset timer
+    # audio returned — reset timer and print bars
     pause_start=0
-
-    # print bars
     convert_to_bars "$line"
 done
-
