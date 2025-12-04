@@ -37,6 +37,7 @@ window#waybar {
 .modules-center {
   border-radius: 0;
   font-size: 12px;
+  padding: 0 60px;
 }
 
 #workspaces {
