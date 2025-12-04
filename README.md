@@ -129,8 +129,6 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="1113" height="554" alt="screenshot-2025-11-21_19-44-21" src="https://github.com/user-attachments/assets/437b7703-15df-4c76-a14a-b21b2d1b0dda" />
-
 ## Screenshots V3 (min2-cava)
 - minimal setup (memory, tempature, hyprland/window are excluded)
 - mpris support , cava support, bluetooth and gtk icons out of tray box
@@ -153,6 +151,15 @@ omarchy-restart-waybar
 ```
 <img width="818" height="79" alt="screenshot-2025-11-23_16-51-11" src="https://github.com/user-attachments/assets/2b3164b0-17e1-4a7a-992c-5c4fd0165d9d" />
 
+<img width="1113" height="554" alt="screenshot-2025-11-21_19-44-21" src="https://github.com/user-attachments/assets/437b7703-15df-4c76-a14a-b21b2d1b0dda" />
+
+## Screenshots V3 (min3)
+- A custom Waybar build featuring a new wlr/taskbar module. Displays all open windows and lets you switch to them with a single click
+##### V3-min3 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min3/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1019" height="428" alt="screenshot-2025-12-05_00-23-46" src="https://github.com/user-attachments/assets/d9556c85-1858-4f52-a635-1c9b7f1cd05b" />
 
 ## Screenshots V4
 - new waybar style with base config from V3 - please backup your config & style file before applying <br>
