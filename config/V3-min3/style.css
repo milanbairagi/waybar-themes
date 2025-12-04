@@ -1,0 +1,264 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+  /* background-color: @background; */
+  /* color: @foreground; */
+
+  border: none;
+  min-height: 0;
+  font-family: 'CaskaydiaMono Nerd Font Propo';
+  font-weight: normal;
+}
+
+
+window#waybar  {
+  background-color: @background;
+  color: @foreground;
+  transition-property: background-color;
+  transition-duration: .5s;
+  border: 2px solid alpha(@foreground, 0.75);
+  border-radius: 6px;
+}
+
+
+#window {
+  text-shadow: 0px 0px 2px alpha(@foreground, 0.6);
+  margin: 0;
+  padding: 0;
+  padding-top: 0px;
+  font-size: 8px;
+}
+
+#custom-omarchy {
+margin: 0;
+padding-top: 1px;
+font-size: 16px;
+}
+
+
+.modules-left {
+border: 2px solid alpha (@foreground, 0.75);
+background: alpha(@background, 0.2);
+border-radius: 6px;
+opacity: 0.95;
+text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
+}
+
+.modules-center {
+  border-radius: 0;
+  text-shadow: 0px 0px 2px alpha(@foreground, 0.25);
+  font-size: 12px;
+  padding: 0 60px;
+}
+
+.modules-right {
+  border: 2px solid alpha(@foreground, 0.75);
+  border-radius: 6;
+  text-shadow: 0px 0px 2px alpha(@foreground, 0.25);
+  font-size: 12px;
+}
+
+#workspaces {
+    padding: 1px 0px 1px;
+    margin: 1px;
+    border-radius: 4px;
+    opacity: 0.95;
+}
+
+#workspaces button {
+    min-width: 25px;
+    min-height: 8px;
+    padding: 1px;
+    margin: 1px 1px;
+    border-radius: 2px;
+    background-color: alpha(@foreground, 0.45);
+    opacity: 0.95;
+    color: @background;
+    font-size: 12px;
+    transition: all 0.15s ease-in-out;
+}
+
+#workspaces button.active {
+    background-color: alpha(@foreground, 0.9);
+    border-radius: 2px;
+    color: @background;
+    font-size: 8px;
+    min-width: 25px;
+    opacity: 1.0;
+    font-size: 12px;
+    transition: all 0.15s ease-in-out;
+}
+
+#workspaces button:hover {
+    color: @foreground;
+    border-radius: 2px;
+    opacity: 0.9;
+    background: linear-gradient(180deg, @background 75%, @foreground);
+}
+
+#workspaces button.empty {
+    opacity: 0.25;
+}
+
+#workspaces button.urgent {
+    background-color: transparent;
+    color: #ff0000;
+    border-radius: 10px;
+}
+
+
+
+
+#custom-weather,
+#hyprland-window,
+#clock,
+#tray,
+#cpu,
+#mpris,
+#battery,
+#network,
+#bluetooth,
+#wlr-taskbar,
+#backlight,
+#pulseaudio,
+#custom-omarchy,
+#idle_inhibitor,
+#custom-updatespacman,
+#custom-screenrecording-indicator,
+#custom-update {
+  min-width: 14px;
+  margin: 0 8.5px;
+}
+
+#custom-update {
+  font-size: 12px;
+}
+
+
+.hidden {
+  opacity: 0;
+}
+
+#clock {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#custom-weather {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+#taskbar {
+ border-radius: 0px 4px 4px 0;
+    padding: 0px;
+    margin: 0px;
+    background: alpha(@background, 0.2);
+}
+#taskbar button {
+    padding: 0 1px;
+    margin: 2px 1;
+}
+#taskbar button.active {
+   border-radius: 2px;
+   background: linear-gradient(180deg, @background 85%, @foreground);
+}
+
+#custom-expand-icon {
+  margin-right: 6px;
+  margin-left: 9px;
+}
+
+#tray {
+    background-color: @transparent;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @transparent;
+}
+
+
+/* EXTRA FIX! */
+
+
+tooltip {
+    background-color: alpha(@background, 1);
+    border: 2px solid alpha(@foreground, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px alpha(@background, 0.3);
+    padding: 4px;
+    font-size: 12px;
+}
+
+tooltip label {
+    color: @foreground;
+}
+
+#custom-screenrecording-indicator {
+    font-size: 12px;
+    padding: 0px;
+    margin: 2px;
+}
+
+#custom-screenrecording-indicator {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: transparent;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #eb7087;
+  animation-name: blink-recording;
+  animation-duration: 0.5s;
+}
+
+@keyframes blink-recording {
+    to {
+        color: @background;
+    }
+}
+
+@keyframes blink-inhibitor {
+    to {
+        color: @background;
+    }
+}
+
+#idle_inhibitor {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: @foreground;
+}
+
+#idle_inhibitor.activated {
+  color: #077B66;
+  animation-name: blink-inhibitor;
+  animation-duration: 1s;
+}
+
+@keyframes blink {
+    to {
+        color: #4a4a4a;
+        
+    }
+}
+
+#mpris{
+padding-top: 2px;
+margin-left: 8px;
+font-size: 12px;
+color: alpha(@foreground, 0.95);
+animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
