@@ -129,6 +129,8 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
+<img width="856" height="427" alt="screenshot-2025-12-05_06-55-45" src="https://github.com/user-attachments/assets/b76b2c89-92dc-4307-b525-ff84779ea74e" />
+
 ## Screenshots V3 (min2-cava)
 - minimal setup (memory, tempature, hyprland/window are excluded)
 - mpris support , cava support, bluetooth and gtk icons out of tray box
