@@ -33,13 +33,11 @@ window#waybar.empty #window{
 #waybar > box {
     border-radius: 8px;
     margin: 0px 8px 4px 8px;
-   /* background-color: rgba(18, 21, 29, 0.98);*/
     background-color: @background;
-   /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);*/
     box-shadow: 1px 1px 3px 1px #101010;
     transition-property: background-color;
     transition-duration: .5s;
-    }
+}
 
 
 .modules-left {
@@ -65,7 +63,6 @@ window#waybar.empty #window{
   padding: 2px;
   padding-left: 2px;
   padding-right: 2px;
-  margin: 4px;
   font-size: 18px;
 }
 
@@ -118,6 +115,7 @@ window#waybar.empty #window{
 
 #hyprland-window,
 #tray,
+#group-tray-expander,
 #cpu,
 #memory,
 #battery,
@@ -129,12 +127,8 @@ window#waybar.empty #window{
 #custom-updatespacman,
 #custom-screenrecording-indicator,
 #custom-update {
-  min-width: 12px;
-  margin: 0 7.5px;
-}
-
-#custom-expand-icon {
-  margin-right: 7px;
+  min-width: 14px;
+  margin: 0 5.5px;
 }
 
 tooltip {
@@ -146,6 +140,10 @@ tooltip {
   margin: 2px;
 }
 
+#idle_inhibitor, #custom-update #custom-screenrecording-indicator {
+margin: 0 5px;
+}
+
 #clock, #idle_inhibitor {
   margin-left: 8.75px;
 }
@@ -154,39 +152,73 @@ tooltip {
   opacity: 0;
 }
 
-#custom-screenrecording-indicator {
-  min-width: 12px;
-  margin-left: 8.75px;
-  font-size: 10px;
-}
-
-#custom-screenrecording-indicator.active {
-  color: #a55555;
-}
-
-/*
-#window {
-  margin: 8.75px;
-}*/
-
-/* Adso add! */
-
-#idle_inhibitor {
-  margin-right: 5px;
-}
-
 #tray-expander {
   margin-left: 5px;
 }
 
 tooltip {
-    padding: 4px;
-    background: @background;
-    font-size: 12px;
-    border: 2px solid alpha(@foreground, 0.64);
-    box-shadow: 1px 1px 3px 1px #131313;
-    border-radius: 8px;
+ padding: 4px;
+ background: @background;
+ font-size: 10px;
+ border: 1px solid alpha(@foreground, 0.8);
+ border-radius: 8px;
+ box-shadow: 1px 1px 3px 1px #131313;
+ font-weight: lighter;
 }
 tooltip label {
     color: @foreground;
+    font-weight: normal;
+}
+
+/* Specific animation Module */
+
+#custom-screenrecording-indicator {
+    font-size: 12px;
+    padding: 0px;
+    margin: 2px;
+}
+
+#custom-screenrecording-indicator {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: transparent;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #eb7087;
+  animation-name: blink-recording;
+  animation-duration: 0.5s;
+}
+
+@keyframes blink-recording {
+    to {
+        color: @background;
+    }
+}
+
+@keyframes blink {
+    to {
+        color: #4a4a4a;
+        
+    }
+}
+
+@keyframes blink-inhibitor {
+    to {
+        color: @background;
+    }
+}
+
+#idle_inhibitor {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: @foreground;
+ }
+
+#idle_inhibitor.activated {
+  color: #178b76;
+  animation-name: blink-inhibitor;
+  animation-duration: 1s;
 }
