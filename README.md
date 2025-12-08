@@ -191,15 +191,8 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img width="1341" height="48" alt="screenshot-2025-11-04_17-41-45" src="https://github.com/user-attachments/assets/a607fd2b-fd91-412b-83b0-afbb2c16c5d7" />
 <img width="2560" height="1440" alt="screenshot-2025-11-04_17-41-21" src="https://github.com/user-attachments/assets/3b71d778-360c-49ce-aa45-788a4a995955" />
 
-
-
-## Screenshot V4 (slim)
-- less hight than basic V4<br>
-##### V4-slim Install-command (copy and paste in your terminal): <br>
-```bash
-git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V4-slim/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
-```
-<img width="1298" height="925" alt="screenshot-2025-11-04_23-32-53" src="https://github.com/user-attachments/assets/0d2c5f3e-8416-44ee-9a9a-8148bbb8177c" />
+## Screenshots V4.2
+- soon
 
 ## Screenshot V4.3
 - Enhancement release (Minimal build, mpris animation, wttrbar and gradient bottom color) <br>
