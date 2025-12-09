@@ -197,7 +197,8 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V4.2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="1437" height="488" alt="screenshot-2025-12-09_17-08-11" src="https://github.com/user-attachments/assets/f6c52dad-debe-4516-8382-f4b579605b74" />
+<img width="1400" height="451" alt="screenshot-2025-12-09_17-19-28" src="https://github.com/user-attachments/assets/57610f79-2a1b-4b90-a593-ef7c094943e0" />
+
 
 ## Screenshot V4.3
 - Enhancement release (Minimal build, mpris animation, wttrbar and gradient bottom color) <br>
