@@ -92,7 +92,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 
 ## Screenshots V3
 - new waybar Style (without red accents)
-- base config is from https://github.com/CobyPowers/omarchy/tree/master/config/waybar (Credits goes to https://github.com/CobyPowers ) , i added some functions according to my needs and changed the high <br>
+- base config is [from](https://github.com/CobyPowers/omarchy/tree/master/config/waybar) (Credits goes [to](https://github.com/CobyPowers)) , i added some functions according to my needs and changed the high <br>
 ##### V3 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/v3/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
