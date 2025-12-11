@@ -80,7 +80,6 @@ font-size: 14px;
 #workspaces button.active,
 #workspaces button:hover {
     background-color: @foreground;
-    border-radius: 1px;
     min-width: 25px;
     border-radius: 26px;
     transition: all 0.15s ease-in-out;
