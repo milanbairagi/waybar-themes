@@ -132,6 +132,10 @@ tooltip {
   font-size: 10px;
 }
 
+#idle_inhibitor, #clock, #custom-update, #custom-screenrecording-indicator {
+  margin: 0 5px;
+}
+
 #window, #hyprland-window {
   margin: 0;
 }
