@@ -4,7 +4,7 @@
   "height": 24, 
   "margin-right": 5,
   "margin-left": 5,
-  "margin-top": 2,
+  "margin-top": 0,
   "margin-bottom": 3,
   "spacing": 0,
   "modules-left": ["custom/omarchy", "hyprland/workspaces", "mpris", "hyprland/window"],
