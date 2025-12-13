@@ -118,7 +118,7 @@
       "󰤥",
       "󰤨"
     ],
-    "format": "{icon} ",
+    "format": "{icon}",
     "format-wifi": "{signalStrength}% {icon}",
     "format-ethernet": " {bandwidthDownBytes}  {bandwidthUpBytes} 󰀂 ",
     "format-disconnected": "󰤮",
