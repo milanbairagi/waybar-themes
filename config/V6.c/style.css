@@ -172,7 +172,7 @@ tooltip label {
 
 #mpris {
 color: @foreground;
-margin-left: 0px;
+margin-left: 3px;
 padding-top: 0px;
 padding-bottom: 1px;
 animation: repeat;
