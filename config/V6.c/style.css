@@ -22,9 +22,10 @@ window#waybar  {
 }
 
 #custom-omarchy {
-font-size: 12px;
-margin-right: 5px;
+font-size: 13px;
+margin-right: 2px;
 margin-left: 7.5px;
+padding-bottom: 0px;
 }
 
 #workspaces {
@@ -79,14 +80,17 @@ tooltip {
 }
 
 #idle_inhibitor, #custom-updatespacman, #custom-update, #custom-screenrecording-indicator, #clock {
-  margin: 0 5px;
+  margin: 0 7.5px;
   padding: 0 2px;
   font-size: 12px;
+}
+#network, #battery {
+  margin-left: -2px;
 }
 
 #tray {
     background-color: @transparent;
-    margin: 0px;
+    margin: 0 7.5px;
 }
 
 #tray > .passive {

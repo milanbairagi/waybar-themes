@@ -85,7 +85,7 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon}",
+    "format": "{percent}% {icon} ",
     "format-icons": [
       "🌑",
       "🌘",
@@ -131,9 +131,9 @@
   },
   "battery": {
     "format": " {capacity}% {icon}",
-    "format-discharging": "{capacity}% {icon}",
-    "format-charging": "{capacity}% {icon}",
-    "format-plugged": " {capacity}%",
+    "format-discharging": " {capacity}% {icon}",
+    "format-charging": " {capacity}% {icon}",
+    "format-plugged": "  {capacity}%",
     "format-icons": {
       "charging": [
         "󰢜",
@@ -215,7 +215,7 @@
     // "ignored-players": ["firefox"]
   },
   "custom/updatespacman": {
-    "format": "{}{icon}",
+    "format": "{} {icon}",
     "return-type": "json",
     "format-icons": {
       "has-updates": "󰏖",
