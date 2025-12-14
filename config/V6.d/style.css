@@ -15,7 +15,7 @@
 }
 
 window#waybar  {
-  background-color: #18181b;
+  background-color: @background;
   border-radius: 5px;
   color: @foreground;
   transition-property: background-color;
