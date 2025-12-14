@@ -117,17 +117,15 @@ tooltip {
   opacity: 0;
 }
 
-#power-profiles-daemon.performance {
-font-size: 16px;
-}
-
-#power-profiles-daemon.balanced {
-font-size: 16px;
-}
-
+#power-profiles-daemon,
+#power-profiles-daemon.performance,
+#power-profiles-daemon.balanced,
 #power-profiles-daemon.power-saver {
 font-size: 16px;
+margin-right: 10px;
 }
+
+
 
 tooltip {
  padding: 4px;
