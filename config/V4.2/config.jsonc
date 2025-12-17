@@ -98,17 +98,16 @@
     "power-saver": ""
   }
 },
-"mpris": {
-    "format": "{player_icon} {title}",
-    "format-paused": "<span color='grey'>{status_icon} {dynamic}</span>",
-    "max-length": 45,
-    "interval": 1,
+   "mpris": {
+    "format": "󰋎 {title}",
+    "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
+    "max-length": 20,
     "player-icons": {
-      "default": "󰋎",
+      "default": "⏸",
       "mpv": "🎵"
     },
     "status-icons": {
-      "paused": "▶"
+      "paused": "󰋐"  
     }
     // "ignored-players": ["firefox"]
   },
