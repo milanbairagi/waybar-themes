@@ -35,7 +35,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 
 
 ## Screenshots V2
-- I have now merged V1, V2, and V2.1 into V1, as creating additional unnecessary versions does not make sense due to the two-module function and would only result in increased maintenance effort. New designs will be created by me for the discontinued versions V2 and V2.1. <br>
+- New V2 version with static Gruvbox color scheme
+##### V2 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="2560" height="459" alt="screenshot-2025-12-18_15-37-41" src="https://github.com/user-attachments/assets/e89e6cb5-1158-4dab-b07b-f590d7e052e2" />
+
 
 ## Screenshots V2.2
 - new version of V1 to V2 series configs with some extras <br>
