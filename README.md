@@ -35,7 +35,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 
 
 ## Screenshots V2
-- New V2 version with static Gruvbox color scheme
+- New V2 version with static Gruvbox color scheme - see color [source](https://github.com/morhetz/gruvbox)
 ##### V2 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
