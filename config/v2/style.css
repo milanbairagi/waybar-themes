@@ -1,207 +1,219 @@
 @import "../omarchy/current/theme/waybar.css";
 
-@define-color bg @background;
-@define-color fg @foreground;
-@define-color rd1 #ff9b71;
-@define-color ia1 #101010;
+/* --- Global-Settings ---*/
 
 * {
-
-  border-radius: 1px;
-  font-family: 'JetBrainsMono Nerd Font Propo';
+  font-family: 'JetBrainsMono Nerd Font';
   font-size: 12px;
   font-weight: bold;
-  min-height: 0;
+  min-height: 0px;
   }
 
-
-/* --- Waybar ---*/
-window#waybar {
+  /* --- Waybar ---*/
+  window#waybar {
   background-color: transparent;
-  border-bottom: 0px;
   transition-property: background-color;
   transition-duration: .5s;
 }
 
-window#waybar.hidden {
-  opacity: 0.2;
-}
-
 window#waybar.empty #window {
+  background: transparent;
   background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: transparent;
   padding: 0;
+  margin: 0;
+}
+#waybar.empty .modules-center {
+  opacity: 0;
 }
 
-/* --- Modules --- */
-.modules-left {
-  margin-left: 5px;
-}
+/* --- Tooltip ---*/
+tooltip {
+  opacity: 1;
 
-.modules-center {
-  background: @bg;
-  box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 1px 8px 2px 0px;
-  border-radius: 2px;
-  padding: 0px;
  }
-
-.modules-right {
-  margin-right: 5px;
-  background: @bg;
-  box-shadow: 1px 1px 3px 0px @ia1;
-  border-radius: 2px;
-  margin: 1px 8px 2px 0px;
-  padding: 0px;
-}
 
 /* --- Workspaces --- */
 #workspaces {
-  background-color: @bg;
-  box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 1px 8px 2px 0px;
   border-radius: 2px;
+  margin: 6px 3px;
 }
 
 #workspaces button {
-  color: @fg;
-  background-color: transparent;
-  margin: 2px;
-  padding: 0 5px;
-  border-radius: 0;
-}
-
-
-#workspaces button:first-child {
-  border-radius: 1px 0 0 1px;
-}
-
-#workspaces button:last-child {
-  border-radius: 0 1px 1px 0;
-}
-
-#workspaces button:first-child:last-child {
-  border-radius: 1px;
-}
-
-#workspaces button.urgent {
-  color: red;
-  background-color: yellow;
+  padding: 0px 2px;
+  margin: 0 3px 0 0;
+  border-radius: 2px;
+  background-color: #3c3836;
+  color: #ebdbb2;
 }
 
 #workspaces button.active {
-  background-color: @rd1;
-  color: @bg;
+    background-color: #fabd2f;
+    color: #282828;
 }
 
-#workspaces button.empty {
-  color: @ia1;
+#workspaces button:hover {
+    background-color: #504945;
+    color: #fabd2f;
 }
 
-/* --- Custom Color+Shdow Omarchy --- */
-#custom-omarchy{
-  padding: 0 5px;
-  border-radius: 2px;
-  background-color: @bg;
-  box-shadow: 1px 1px 3px 0px @ia1;
-  color: @rd1;
-  margin: 1px 8px 2px 0px;
-}
-#window{
-  padding: 0 5px;
-  background: @bg;
-  border-radius: 2px;
-  box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 1px 8px 2px 0px;
-  color: @fg;
-}
 
 /* --- General Modules --- */
 
 #tray,
-#cava,
-#memory,
+#window,
+#mpris,
 #cpu,
+#clock,
 #battery,
 #network,
-#custom-updatespacman,
-#temperature,
+#memory,
+#backlight,
 #bluetooth,
 #pulseaudio,
 #custom-weather,
 #custom-update,
+#idle_inhibitor,
+#custom-omarchy,
 #custom-screenrecording-indicator,
-#clock {
-  min-width: 12px;
-  padding: 0 5px;
-  margin: 0 2px;
-  
+#custom-updatespacman {
+  margin: 6px 3px 6px 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 2px;
 }
 
-/* --- Right module Hover color --- */
+/* --- Hover right module  --- */
+#clock:hover,
+#tray:hover,
+#custom-expand-icon:hover,
 #cpu:hover,
 #memory:hover,
-#battery:hover,
 #temperature:hover,
+#battery:hover,
 #bluetooth:hover,
+#backlight:hover,
+#custom-omarchy:hover,
+#custom-weather:hover,
+#custom-update:hover,
+#idle_inhibitor:hover,
+#custom-screenrecording-indicator,
+#custom-updatespacman:hover,
 #network:hover,
 #pulseaudio:hover {
- background-color: @ia1;
-}
-
-#cava {
-  padding: 0 5px;
-  background-color: @background;
   border-radius: 2px;
-  box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 1px 8px 2px 0px;
-  border-radius: 0;
-  color: #ff9b71;
+  opacity: 0.9;
+  background-color: #504945;
+  color: #fabd2f;
 }
 
-tooltip {
-  padding: 2px;
+/* --- Gruvebox-Colors-Module --- */
+#window {
+    background-color: #eadbb2;
+    color: #282828;
 }
 
-#mpris {
-  padding: 0 5px;
-  background-color: @bg;
-  border-radius: 2px;
-  box-shadow: 1px 1px 3px 0px @ia1;
-  margin: 1px 8px 2px 0px;
-  color: @fg;
+#custom-omarchy {
+  background-color: #3c3836;
+  color: #ebdbb2;
 }
 
-tooltip {
- padding: 4px;
- background: @bg;
- font-size: 10px;
- border: 1px solid alpha(@foreground, 0.8);
- border-radius: 8px;
+#custom-update, #custom-updatespacman {
+  background-color: #fabd2f;
+  color: #282828;
 }
-tooltip label {
-    color: @fg;
-    font-weight: normal;
+
+#clock {
+    background-color: #3c3836;
+    color: #ebdbb2;
+}
+#idle_inhibitor {
+    background-color: #3c3836;
+    color: #ebdbb2;
+}
+
+#custom-weather {
+    background-color: #3c3836;
+    color: #ebdbb2;
+}
+
+#tray {
+    background-color: #3c3836;
+}
+
+#battery {
+    background-color: #83a598;
+    color: #282828;
+}
+
+#cpu {
+    background-color: #fabd2f;
+    color: #282828;
+}
+
+#memory {
+    background-color: #458588;
+    color: #282828;
+}
+
+#network {
+    background-color: #689d6a;
+    color: #282828;
+}
+
+#pulseaudio {
+    background-color: #fb4934;
+    color: #282828;
+}
+
+#bluetooth {
+    background-color: #d3869b;
+    color: #282828;
 }
 
 
 /* Specific Module */
 
-#tray-expander {
-  padding: 0 5px;
-  background: @bg;
-  color: @fg;
-  border-radius: 1px;
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @transparent;
 }
 
 .hidden {
   opacity: 0;
 }
 
-#custom-screenrecording-indicator {
-    font-size: 12px;
-    padding: 0 2px;
-    margin: 2px;
+tooltip {
+ padding: 4px;
+ background-color: #3c3836;
+ border: 1px solid alpha(@foreground, 0.8);
+ border-radius: 4px;
+ font-size: 12px;
+ 
 }
+tooltip label {
+    color: #ebdbb2;
+    font-weight: normal;
+}
+
+
+/* --- Warnings --- */
+#cpu.critical,
+#memory.critical,
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+    background-color: #fe8019;
+    color: #282828;
+}
+
+/* Specific animation Module */
 
 #custom-screenrecording-indicator {
   animation-timing-function: linear;
@@ -219,5 +231,23 @@ tooltip label {
 @keyframes blink-recording {
     to {
         color: @background;
+    }
+}
+
+#mpris {
+background-color: #3c3836;
+color: #ebdbb2;
+animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #4a4a4a;
+        
     }
 }
