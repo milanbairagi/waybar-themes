@@ -79,6 +79,7 @@ tooltip {
 #custom-omarchy,
 #custom-screenrecording-indicator,
 #custom-updatespacman {
+  min-width: 14px;
   margin: 6px 3px 6px 3px;
   padding-left: 6px;
   padding-right: 6px;

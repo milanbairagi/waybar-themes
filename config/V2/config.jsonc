@@ -111,7 +111,7 @@
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
   "idle_inhibitor": {
-    "format": "{icon} ",
+    "format": "{icon}",
     "format-icons": {
       "activated": "󰛊",
       "deactivated": "󰾫"
