@@ -215,7 +215,8 @@
     }
   },
   "tray": {
-   "spacing": 10
+   "icon-size": 12,
+    "spacing": 10
   },
   "mpris": {
     "format": "{player_icon} {dynamic}",
