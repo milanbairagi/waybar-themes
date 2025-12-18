@@ -18,8 +18,6 @@
 window#waybar {
   background-color: @bg;
   border-bottom: 2px solid @fg;
-  /*remove comments for border animation*/
-  /*animation: dimBrighten 3s ease-in-out infinite;*/
 }
 
 window#waybar.hidden {
@@ -224,20 +222,3 @@ tooltip label {
         color: @bg;
     }
 }
-
-
-/* Border animation setup */
-/*
-@keyframes dimBrighten {
-  0% {
-    border-color: @foreground;
-  }
-
-  100% {
-    border-color: @foreground;
-  }
-
-  50% {
-    border-color: transparent;
-  }
-}*/
