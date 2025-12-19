@@ -19,11 +19,12 @@
   ],
   "modules-right": [
     "group/tray-expander",
-    "custom/updatespacman",
     "backlight",
+    "custom/updatespacman",
     "bluetooth",
     "network",
     "pulseaudio",
+    "power-profiles-daemon",
     "memory",
     "cpu",
     "battery"
@@ -123,6 +124,17 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "󰓅",
+      "performance": "󰓅",
+      "balanced": "󰾅",
+      "power-saver": "󰾆"
+    }
   },
    "cpu": {
     "interval": 2,

@@ -80,13 +80,16 @@ window#waybar.empty #window{
     transition: all 0.3s ease-in-out;
 }
 
+#workspaces button.empty {
+  opacity: 0.2;
+}
+
 #workspaces button.empty.active {
  color: @foreground;
  opacity: 1.0;
  border-radius: 2px;
  min-width: 30px;
 }
-
 
 #workspaces button:hover {
     color: @foreground;
@@ -97,9 +100,6 @@ window#waybar.empty #window{
 }
 
 
-#workspaces button.empty {
-  opacity: 0.2;
-}
 
 #hyprland-window,
 #window,
@@ -116,12 +116,12 @@ window#waybar.empty #window{
 #clock,
 #idle_inhibitor,
 #custom-updatespacman,
+#power-profiles-daemon,
 #custom-screenrecording-indicator,
 #custom-update {
   min-width: 12px;
   margin: 1px 3px 1px 3px;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 0 4px;
 }
 
 #custom-expand-icon {
@@ -135,6 +135,14 @@ tooltip {
 .hidden {
   opacity: 0;
 }
+
+#power-profiles-daemon,
+#power-profiles-daemon.performance,
+#power-profiles-daemon.balanced,
+#power-profiles-daemon.power-saver {
+font-size: 14px;
+}
+
 
 /* Specific animation Module */
 
