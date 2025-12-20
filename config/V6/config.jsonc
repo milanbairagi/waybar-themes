@@ -5,6 +5,7 @@
   "spacing": 0,
   "height": 28,
   "margin-top": -5,
+  "margin-bottom": 3,
   "width": 1400,
   "modules-left": [
     "custom/omarchy",
@@ -55,7 +56,7 @@
   },
   "hyprland/window": {
     "format": "{title} - {class}",
-    "max-length": 45,
+    "max-length": 55,
     "rewrite": {
       " - ": "", // if no window is focused, a single dash is displayed, this removes it
       "(.*?) - Chromium - chromium": "  $1 ",
@@ -113,7 +114,7 @@
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
-    "format": "{:L%A: %H:%M}",
+    "format": "{:L%A %H:%M}",
     "format-alt": "{:L%d %B W%V %Y}",
     "tooltip-format": "<span>{calendar}</span>",
     "calendar": {
@@ -126,7 +127,7 @@
         "today": "<span color='#ff6699'><b>{}</b></span>",
       },
     },
-    "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
   "network": {
     "format-icons": [
@@ -136,8 +137,8 @@
       "󰤥",
       "󰤨"
     ],
-    "format": "{icon} ",
-    "format-wifi": "{icon} ",
+    "format": "{icon}",
+    "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
