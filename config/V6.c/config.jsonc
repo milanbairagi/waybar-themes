@@ -30,6 +30,8 @@
     "pulseaudio#output",
     "pulseaudio#input",
     "custom/split",
+    "power-profiles-daemon",
+    "custom/split",
     "memory",
     "custom/split",
     "cpu",
@@ -39,9 +41,9 @@
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-      "default": "",
-      "active": "󰮯",
-      "focused": ""
+      "default": "",
+      "active": "",
+      "focused": "󰿜"
     },
     "persistent-workspaces": {
       "1": [],
@@ -75,17 +77,18 @@
   },
   "cpu": {
     "interval": 2,
-    "format": "{usage}% 󰍛",
+    "format": "󰍛 {usage}%",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
     "memory": {
     "interval": 2,
-    "format": "{percentage}%  ",
+    "format": "  {percentage}%",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
-  "backlight": {
+   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon} ",
+    "format": "{icon} ",
+    "tooltip-format": "{percent}%",
     "format-icons": [
       "🌑",
       "🌘",
@@ -110,7 +113,7 @@
     },
     "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
   },
-  "network": {
+   "network": {
     "format-icons": [
       "󰤯",
       "󰤟",
@@ -119,8 +122,8 @@
       "󰤨"
     ],
     "format": "{icon}",
-    "format-wifi": "{signalStrength}% {icon}",
-    "format-ethernet": " {bandwidthDownBytes}  {bandwidthUpBytes} 󰀂 ",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰈀",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -171,16 +174,17 @@
     }
   },
   "bluetooth": {
-    "format": " {status}",
+    "format": "",
     "format-disabled": "󰂲",
     "format-connected": "󰂱",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "omarchy-launch-bluetooth"
   },
-    "pulseaudio#input": {
-    "format-source": " {volume}%",
-    "format-source-muted": " off",
+      "pulseaudio#input": {
+    "format-source": "",
+    "format-source-muted": " ",
     "format": "{format_source}",
+    "tooltip-format": "{format_source} {source_volume}%",
     "scroll-step": 1,
     "smooth-scrolling-threshold": 1,
     "max-volume": 100,
@@ -190,7 +194,8 @@
     "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
 },
 "pulseaudio#output": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}",
+    "tooltip-format": "{icon}  {volume}%",
     "format-muted": " off",
     "format-icons": {
         "default": [""]
@@ -199,12 +204,23 @@
     "scroll-step": 2,
     "smooth-scrolling-threshold": 1,
     "on-click": "omarchy-launch-or-focus-tui wiremix",
-    "on-click-right": "pamixer -t",
+    "on-click-right": "pamixer -t"
 },
+ "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "󰓅",
+      "performance": "󰓅",
+      "balanced": "󰾅",
+      "power-saver": "󰾆"
+    }
+  },
    "mpris": {
-    "format": "󰋎 {title}",
+    "format": "󰋎 {artist}-{title}",
     "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
-    "max-length": 20,
+    "max-length": 30,
     "player-icons": {
       "default": "⏸",
       "mpv": "🎵"
