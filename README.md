@@ -1,4 +1,4 @@
-## Waybar Themes for opinionated Linux/Omarchy
+## Waybar Themes for opinionated Omarchy
 
  A collection of my Waybar themes – have fun exploring and customizing them!
 
@@ -291,7 +291,8 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.b/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="1566" height="443" alt="screenshot-2025-12-11_22-02-28" src="https://github.com/user-attachments/assets/01b0a58c-85c1-4887-8f77-144b63b94d51" />
+<img width="1431" height="367" alt="screenshot-2025-12-20_22-09-33" src="https://github.com/user-attachments/assets/a669d220-6a10-4c53-932c-971a6800ada0" />
+
 
 ## Screenshot V6.c 
 - long but minimal Style <br>
