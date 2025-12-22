@@ -4,9 +4,10 @@
 
 * {
   font-family: 'JetBrainsMono Nerd Font';
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   min-height: 0px;
+  outline: 1px solid red;
   }
 
   /* --- Waybar ---*/
@@ -14,15 +15,15 @@
   background-color: transparent;
 }
 
+
 window#waybar > box {
-   border-radius: 24px;
-  border: 1.5px solid transparent;
-  margin: 0px 8px 3px 8px;
-  background-color: @background;
-  box-shadow: 1px 1px 3px 1px #101010;
-  transition-property: background-color;
-  transition-duration: .5s;
+  background-color: alpha(@background, 0.75);
+  box-shadow:
+    0 0 0 1px alpha(@foreground, 0.15),
+    0 8px 20px alpha(#000000, 0.25);
+  border-radius: 24px;
 }
+
 
 window#waybar.empty #window {
   background: transparent;
@@ -33,14 +34,14 @@ window#waybar.empty #window {
   padding: 0;
   margin: 0;
 }
-#waybar.empty .modules-center {
+#waybar.empty #left2 {
   opacity: 0;
 }
+
 
 /* --- Tooltip ---*/
 tooltip {
   opacity: 1;
-
  }
 
  /* --- Sub-Groups ---*/
@@ -50,27 +51,23 @@ tooltip {
   opacity: 1;
   border: 0.5px solid alpha(@foreground, 0.8);
   color: @foreground;
-  margin-right: 8px;
+  background-color: alpha(@background, 0.9);
+  margin-right: 2px;
 }
 
 #left2{
-  margin-right: 8px;
-}
-
-#left3{
-
-}
-
- /* --- Modules ---*/
-
-.modules-center {
   color: @foreground;
   border-radius: 24px;
-  margin: 0px;
   opacity: 1;
   border: 0.5px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
- }
+  margin-right: 2px;
+}
+
+#left3{
+}
+
+ /* --- Modules ---*/
 
 .modules-right {
   color: @foreground;
@@ -78,7 +75,7 @@ tooltip {
   opacity: 1;
   border: 0.5px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
-}
+ }
 
 
 /* --- Workspaces --- */
@@ -92,8 +89,8 @@ tooltip {
 }
 
 #workspaces button {
-  padding: 0px 10px;
-  margin: 2px 2px;
+  padding: 0px 1px;
+  margin: 1px 1px;
   border-radius: 24px;
   background-color: alpha(@foreground, 0.5);
   color: @background; 
@@ -103,7 +100,8 @@ tooltip {
 
 #workspaces button.active {
   color: @background;
-  padding: 0 20px;
+  padding: 0 15px;
+  margin: 1px 1px;
   background-color: alpha(@foreground, 0.9);
   border-radius: 24px;
   opacity: 1.0;
@@ -122,9 +120,14 @@ tooltip {
   background-color: alpha(@foreground, 0.9);
   color: @background;
   opacity: 1;
-
 }
 
+#workspaces button:hover.empty,
+#workspaces button:hover {
+    background-color: @foreground;
+    color: @background;
+    opacity: 1;
+}
 
 /* --- General Modules --- */
 
@@ -144,10 +147,11 @@ tooltip {
 #custom-weather,
 #custom-update,
 #idle_inhibitor,
+#power-profiles-daemon,
 #custom-screenrecording-indicator,
 #custom-updatespacman {
-  min-width: 14px;
-  margin: 1px 4px 1px 4px;
+  min-width: 12px;
+  margin: 0px 2px 0px 2px;
   padding-left: 3px;
   padding-right: 3px;
 }
@@ -179,6 +183,8 @@ tooltip {
   opacity: 0;
 }
 
+
+
 tooltip {
  padding: 4px;
  background: @background;
@@ -193,7 +199,13 @@ tooltip label {
     font-weight: normal;
 }
 
-
+#power-profiles-daemon,
+#power-profiles-daemon.performance,
+#power-profiles-daemon.balanced,
+#power-profiles-daemon.power-saver {
+font-size: 14px;
+margin-top: 0px;
+}
 
 
 /* Specific animation Module */
@@ -244,19 +256,6 @@ tooltip label {
     to {
         color: @background;
     }
-}
-
-#idle_inhibitor {
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  color: @foreground;
- }
-
-#idle_inhibitor.activated {
-  color: #178b76;
-  animation-name: blink-inhibitor;
-  animation-duration: 1s;
 }
 
 #battery.warning {
