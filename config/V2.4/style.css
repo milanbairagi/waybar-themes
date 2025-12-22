@@ -76,6 +76,7 @@ tooltip {
   opacity: 1;
   border: 0.5px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
+  padding-right: 4px;
  }
 
 
