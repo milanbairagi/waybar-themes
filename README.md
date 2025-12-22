@@ -69,7 +69,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 
 
 ## Screenshots V2.4
-- base config V2.3 - with full shadow "box" waybar background <br>
+- base config V2.3 - minimal concept <br>
 ##### V2.4 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.4/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
