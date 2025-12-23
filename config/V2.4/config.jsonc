@@ -305,7 +305,7 @@
     "status-icons": {
       "paused": "▶"
     },
-    "ignored-players": ["firefox", "chromium"]
+    "ignored-players": ["firefox", "chromium", "brave"]
   },
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-cmd-screenrecord",
