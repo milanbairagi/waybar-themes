@@ -91,9 +91,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="836" height="406" alt="screenshot-2025-12-23_11-52-52" src="https://github.com/user-attachments/assets/3a29a1fe-0289-480f-9d4e-2092e9ef1191" />
 
-
-
-
+## Screenshots V2.7
+- base config V2 - now with dynamic colors according to theme scheme
+##### V2.7 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.7/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1920" height="462" alt="screenshot-2025-12-28_16-37-24" src="https://github.com/user-attachments/assets/3b3a6130-689c-4af7-bcc4-dda3e31c91f8" />
 
 ## Screenshots V3
 - new waybar Style (without red accents)
