@@ -148,9 +148,9 @@ font-size: 15px;
 
 tooltip {
  padding: 4px;
-   background-color: alpha(@background, 0.85);
- opacity: 0.9;
- border: 1px solid alpha(@foreground, 0.8);
+ background-color: alpha(@background, 1);
+ opacity: 1;
+ border: 1.5px solid alpha(@foreground, 0.8);
  border-radius: 4px;
  font-size: 12px;
  
