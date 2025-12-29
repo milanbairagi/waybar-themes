@@ -42,26 +42,19 @@ tooltip {
   opacity: 0.95;
   border: 2px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
-  margin: 0px;
-  padding: 0px 6px;
   color: @foreground;
+  margin: 3px 1px 3px 1px;
 }
 
 #left2{
-  margin: 0px;
-  padding: 0px 6px;
-  margin-left: -3px;
+
 }
 
 #left3{
-  margin: 0px;
-  margin-left: -9px;
+
 }
 
 #mpris{
-  margin: 0px;
-  padding: 0px 6px;
-  padding-left: 4px;
   border-radius: 4px;
   border: 2px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
@@ -71,20 +64,20 @@ tooltip {
 
 .modules-center {
   color: @foreground;
-  padding: 0px 1px;
   border-radius: 4px;
   opacity: 0.95;
   border: 2px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
+  margin: 3px 1px 3px 1px;
  }
 
 .modules-right {
   color: @foreground;
-  padding: 0px 1px;
   border-radius: 4px;
   opacity: 0.95;
   border: 2px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
+  margin: 3px 1px 3px 1px;
 }
 
 
@@ -94,7 +87,7 @@ tooltip {
   border-radius: 4px;
   background-color: alpha(@background, 1);
   opacity: 0.95;
-  margin: 0px;
+  margin: 3px 1px;
   padding: 1px 2px 1px;
 }
 
@@ -142,17 +135,10 @@ tooltip {
 
 /* --- Custom Settings hyprland/window module --- */
 #window {
-  margin: 2px;
-  padding: 1px 0 1px;
   color: @foreground;
   opacity: 0.9;
 }
 
-#custom-omarchy {
-  padding: 1px 0 1px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
 
 /* --- General Modules --- */
 
@@ -168,12 +154,17 @@ tooltip {
 #bluetooth,
 #pulseaudio,
 #custom-weather,
+#custom-omarchy,
+#window,
+#power-profiles-daemon,
 #custom-update,
 #idle_inhibitor,
 #custom-screenrecording-indicator,
 #custom-updatespacman {
-  min-width: 12px;
-  margin: 0 7.5px;
+  min-width: 14px;
+  margin: 3px 1px 3px 1px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 /* --- Hover right module  --- */
@@ -182,15 +173,16 @@ tooltip {
 #custom-expand-icon:hover,
 #cpu:hover,
 #memory:hover,
+#window:hover,
 #temperature:hover,
 #battery:hover,
 #bluetooth:hover,
+#power-profiles-daemon:hover,
 #backlight:hover,
 #custom-omarchy:hover,
 #custom-weather:hover,
 #custom-update:hover,
 #idle_inhibitor:hover,
-#custom-screenrecording-indicator,
 #custom-updatespacman:hover,
 #network:hover,
 #pulseaudio:hover {
@@ -200,21 +192,15 @@ tooltip {
   background: linear-gradient(180deg, @background 75%, @foreground);
 }
 
-
-
-
 /* Specific Module */
 
 #group-tray-expander {
-  padding: 0px;
-  margin-right: 0px;
   background-color: alpha(@background, 0.9);
   color: @foreground;
 }
 
 #tray {
     background-color: @background;
-    margin: 0 10px;
 }
 
 #tray > .passive {
@@ -233,7 +219,6 @@ tooltip {
 tooltip {
  padding: 4px;
  background: @background;
- font-size: 10px;
  border: 1px solid alpha(@foreground, 0.8);
  border-radius: 8px;
  box-shadow: 1px 1px 3px 1px #131313;
@@ -247,9 +232,6 @@ tooltip label {
 
 #mpris {
 color: @foreground;
-padding-top: 2px;
-margin-left: 8px;
-margin-right: 0px;
 animation: repeat;
 	animation-name: blink;
 	animation-duration: 3s;
@@ -260,12 +242,6 @@ animation: repeat;
 
 
 /* Specific animation Module */
-
-#custom-screenrecording-indicator {
-    font-size: 12px;
-    padding: 0px;
-    margin: 2px;
-}
 
 #custom-screenrecording-indicator {
   animation-timing-function: linear;
@@ -312,4 +288,26 @@ animation: repeat;
   color: #178b76;
   animation-name: blink-inhibitor;
   animation-duration: 1s;
+}
+
+#battery.warning {
+  color: #c95d0f;
+  background-color: transparent;
+}
+
+@keyframes blink2 {
+  to {
+    background-color: transparent;
+    color: #f53c3c;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: transparent;
+  color: #e6d8ba;
+  animation-name: blink2;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

@@ -1,10 +1,9 @@
 {
   "reload_style_on_change": true,
-  "layer": "top",
   "position": "top",
   "mod": "dock",
-  "margin-top": 2,
-  "height": 27,
+  "margin-top": 0,
+  "height": 20,
   "margin-left": 5,
   "margin-right": 5,
   "margin-bottom": 0,
@@ -34,7 +33,9 @@
     "group/tray-expander",
     "backlight",
     "bluetooth",
-    "pulseaudio",
+    "pulseaudio#output",
+    "pulseaudio#input",
+    "power-profiles-daemon",
     "network",
     "memory",
     "cpu",
@@ -125,7 +126,7 @@
   },
   "clock": {
     "format": " {:%H:%M %a}",
-    "format-alt": " {:%d/%m/%Y  %H:%M:%S}",
+    "format-alt": " {:%d/%m/%Y  %H:%M}",
     "tooltip-format": "<span>{calendar}</span>",
     "calendar": {
       "mode": "month",
@@ -143,8 +144,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": ""
+    "activated": "󰛊",
+      "deactivated": "󰾫"
     }
   },
   "network": {
@@ -165,6 +166,17 @@
     "interval": 3,
     "nospacing": 1,
     "on-click": "omarchy-launch-wifi"
+  },
+    "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+    "default": "",
+    "performance": "",
+    "balanced": " ",
+    "power-saver": ""
+    }
   },
   "battery": {
     "format": "{capacity}% {icon}",
@@ -198,8 +210,8 @@
       ]
     },
     "format-full": "󰂅",
-    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
-    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {timeTo}",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {timeTo}",
     "interval": 5,
     "states": {
       "warning": 20,
@@ -216,7 +228,8 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon}",
+    "format": "{icon}",
+    "tooltip-format": "{percent}%",
     "format-icons": [
       "🌑",
       "🌘",
@@ -232,17 +245,32 @@
         "exec": "wttrbar --nerd --location yourlocation",
         "return-type": "json"
   },
-  "pulseaudio": {
-    "format": "{icon}",
+  "pulseaudio#input": {
+    "format-source": "",
+    "format-source-muted": " ",
+    "format": "{format_source}",
+    "tooltip-format": "{format_source} {source_volume}%",
+    "scroll-step": 1,
+    "smooth-scrolling-threshold": 1,
+    "max-volume": 100,
     "on-click": "omarchy-launch-or-focus-tui wiremix",
     "on-click-right": "pamixer -t",
-    "tooltip-format": "Playing at {volume}%",
-    "scroll-step": 5,
-    "format-muted": "",
+    "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +1%",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -1%",
+},
+"pulseaudio#output": {
+    "format": "{icon}",
+    "tooltip-format": "{icon}  {volume}%",
+    "format-muted": " off",
     "format-icons": {
-      "default": ["", "", ""]
-    }
-  },
+        "default": [""]
+    },
+    "max-volume": 100,
+    "scroll-step": 2,
+    "smooth-scrolling-threshold": 1,
+    "on-click": "omarchy-launch-or-focus-tui wiremix",
+    "on-click-right": "pamixer -t"
+},
  "group/tray-expander": {
     "orientation": "inherit",
     "drawer": {
@@ -273,8 +301,8 @@
     },
     "status-icons": {
       "paused": "▶"
-    }
-    // "ignored-players": ["firefox"]
+    },
+    "ignored-players": ["firefox", "chromium", "brave"]
   },
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-cmd-screenrecord",
