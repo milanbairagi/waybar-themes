@@ -125,6 +125,13 @@ tooltip {
   transition: all 0.3s ease-in-out;
 }
 
+#workspaces button.empty.active {
+  background-color: alpha(@foreground, 1);
+  color: @background;
+  opacity: 1;
+  border-radius: 2px;
+}
+
 #workspaces button:hover {
   color: @foreground;
   border-radius: 2px;
