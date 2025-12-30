@@ -99,6 +99,15 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1920" height="462" alt="screenshot-2025-12-28_16-37-24" src="https://github.com/user-attachments/assets/3b3a6130-689c-4af7-bcc4-dda3e31c91f8" />
 
+## Screenshots V2.8
+- similar to V2.6 , less borders and the lowest possible height without losing readability & functionality
+##### V2.8 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.8/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="789" height="392" alt="screenshot-2025-12-30_14-34-12" src="https://github.com/user-attachments/assets/51a17b49-1cbb-41f4-8208-e107cfbec17d" />
+
+
 ## Screenshots V3
 - new waybar Style (without red accents)
 - base config is [from](https://github.com/CobyPowers/omarchy/tree/master/config/waybar) (Credits goes [to](https://github.com/CobyPowers)) , i added some functions according to my needs and changed the high <br>
