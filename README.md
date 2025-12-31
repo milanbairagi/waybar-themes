@@ -99,6 +99,16 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1920" height="462" alt="screenshot-2025-12-28_16-37-24" src="https://github.com/user-attachments/assets/3b3a6130-689c-4af7-bcc4-dda3e31c91f8" />
 
+## Screenshots V2.7b
+- Waybar V2.7b (based on V2.7): Right-side modules moved into a click-expandable tray
+- Battery module: Moved to the left to stay always visible for laptop users
+##### V2.7b Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.7b/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="876" height="350" alt="screenshot-2025-12-31_21-43-38" src="https://github.com/user-attachments/assets/2908a724-081e-4e07-ad2a-a2e1c46a3d25" />
+
+
 ## Screenshots V2.8
 - similar to V2.6 , less borders and the lowest possible height without losing readability & functionality
 ##### V2.8 Install-command (copy and paste in your terminal): <br>
