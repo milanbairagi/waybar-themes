@@ -20,9 +20,21 @@
     "custom/update",
     "custom/updatespacman"
   ],
-  "modules-right": [
-    "mpris",
-    "group/tray-expander",
+  "modules-right": ["group/right2", "group/right1", "group/right"],
+
+   "group/right2": {
+    "orientation": "inherit",
+    "modules": ["mpris"]
+  },
+ 
+  "group/right1": {
+    "orientation": "inherit",
+    "modules": ["tray"]
+  },
+
+  "group/right": {
+    "orientation": "inherit",
+    "modules": [
     "backlight",
     "bluetooth",
     "temperature",
@@ -31,7 +43,9 @@
     "memory",
     "cpu",
     "battery"
-  ],
+  ]
+  },
+
   "hyprland/workspaces": {
 	"active-only": false,
 	"all-outputs": true,
@@ -224,24 +238,9 @@
       "🌕"
     ]
   },
-  "group/tray-expander": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "tray-group-item"
-    },
-    "modules": [
-      "custom/expand-icon",
-      "tray"
-    ]
-  },
-  "custom/expand-icon": {
-    "format": "",
-    "tooltip": false
-  },
   "tray": {
-    "icon-size": 12,
-    "spacing": 12
+    "icon-size": 11,
+    "spacing": 8
   },
    "mpris": {
     "format": "󰋎 {artist}-{title}",
