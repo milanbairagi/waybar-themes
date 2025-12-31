@@ -5,23 +5,34 @@
   "mod": "dock",
   "margin-top": 1,
   "height": 10,
-  "margin-left": 5,
-  "margin-right": 5,
   "margin-bottom": 2,
-  "modules-left": [
+  "modules-center": [
+     "mpris",
       "custom/omarchy",  
       "clock",
       "custom/weather",
-      "tray",
+      "battery",
       "idle_inhibitor",
       "custom/screenrecording-indicator",
       "custom/updatespacman",
       "custom/update",
       "hyprland/workspaces",
-      "mpris"
+      "group/group-power"
     ],
-  "modules-center": ["hyprland/window"],
-  "modules-right": [
+  //"modules-center": ["hyprland/window"],
+//"modules-right": ["group/group-power"],
+
+"group/group-power": {
+    "orientation": "horizontal",
+    "drawer": {
+        "click-to-reveal": true,
+        "transition-duration": 500,
+        "children-class": "not-power",
+        "transition-left-to-right": true
+    },
+    "modules": [
+    "custom/trayicon",
+    "tray",
     "backlight",
     "bluetooth",
     "pulseaudio#output",
@@ -29,9 +40,11 @@
     "network",
     "power-profiles-daemon",
     "memory",
-    "cpu",
-    "battery"    
-  ],
+    "cpu"
+    ]
+},
+
+
   "hyprland/workspaces": {
     "on-click": "activate",
     "disable-scroll": true,
@@ -242,9 +255,14 @@
     "on-click-right": "pamixer -t"
 },
   "tray": {
-   "icon-size": 11,
-    "spacing": 5
+   "icon-size": 12,
+    "spacing": 5,
+    "show-passive-items": true
   },
+  "custom/trayicon": {
+        "format": "",
+         "tooltip": false
+    },
   "mpris": {
     "format": "{player_icon} {artist}-{title}",
     "format-paused": "<span color='grey'>{status_icon} {title}</span>",

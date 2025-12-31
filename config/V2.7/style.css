@@ -29,6 +29,13 @@ window#waybar.empty #window {
   opacity: 0;
 }
 
+/* --- Custom Modules ---*/
+
+.modules-center {
+    min-width: 880px;
+    margin-left: 300px;
+}
+
 /* --- Tooltip ---*/
 tooltip {
   opacity: 1;
@@ -69,6 +76,7 @@ tooltip {
 /* --- General Modules --- */
 
 #tray,
+#custom-trayicon,
 #window,
 #mpris,
 #cpu,
@@ -84,6 +92,7 @@ tooltip {
 #custom-update,
 #idle_inhibitor,
 #custom-omarchy,
+#not-power,
 #custom-screenrecording-indicator,
 #custom-updatespacman {
   min-width: 18px;
@@ -113,11 +122,19 @@ padding-left: 3px;
   padding-right: 3px;
 }
 
+#custom-trayicon {
+  font-size: 15px;
+}
+
+#backlight {
+  font-size: 11px;
+}
+
 /* --- Hover right module  --- */
 #clock:hover,
-#tray:hover,
-#custom-expand-icon:hover,
+#custom-trayicon:hover,
 #cpu:hover,
+#not-power:hover,
 #memory:hover,
 #window:hover,
 #mpris:hover,
@@ -142,10 +159,6 @@ padding-left: 3px;
 
 
 /* Specific Module */
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
@@ -177,8 +190,8 @@ tooltip label {
 #battery.warning,
 #battery.critical,
 #battery.urgent {
-    background-color: #fe8019;
-    color: #282828;
+    background-color: transparent;
+    color: #fe8019;
 }
 
 /* Specific animation Module */
@@ -202,6 +215,7 @@ tooltip label {
 
 #custom-screenrecording-indicator.active {
   color: #eb7087;
+  background-color: alpha(@background, 0.85);
   animation-name: blink-recording;
   animation-duration: 0.5s;
 }
@@ -217,7 +231,6 @@ tooltip label {
 @keyframes blink {
     to {
         color: #4a4a4a;
-        
     }
 }
 
@@ -234,13 +247,13 @@ tooltip label {
 
 @keyframes blink2 {
   to {
-    background-color: transparent;
+    background-color: alpha(@background, 0.85);
     color: #f53c3c;
   }
 }
 
 #battery.critical:not(.charging) {
-  background-color: transparent;
+  background-color: alpha(@background, 0.85);
   color: #e6d8ba;
   animation-name: blink2;
   animation-duration: 0.5s;
