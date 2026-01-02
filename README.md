@@ -362,6 +362,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1480" height="425" alt="screenshot-2026-01-02_15-20-42" src="https://github.com/user-attachments/assets/316aae7e-75d7-4c63-929e-0b986cf4d57c" />
 
+## Screenshot V6.fa
+- Changed from the previous version V6.f without shadows to a long bar version, providing a "cleaner" and more consistent visual style.
+##### V6.f Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.fa/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="2560" height="359" alt="screenshot-2026-01-02_20-53-50" src="https://github.com/user-attachments/assets/9e5f77ec-ba1f-42c0-810d-46f5327ed3f4" />
 
 
 
