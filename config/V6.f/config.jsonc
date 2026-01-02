@@ -240,7 +240,7 @@
     "on-click": "omarchy-launch-wifi"
   },
   "battery": {
-    "format": " {capacity}% {icon}",
+    "format": "{capacity}% {icon}",
     "format-discharging": "{capacity}% {icon}",
     "format-charging": "{capacity}% {icon}",
     "format-plugged": "",
