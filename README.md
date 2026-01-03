@@ -211,12 +211,13 @@ omarchy-restart-waybar
 <img width="1113" height="554" alt="screenshot-2025-11-21_19-44-21" src="https://github.com/user-attachments/assets/437b7703-15df-4c76-a14a-b21b2d1b0dda" />
 
 ## Screenshots V3 (min3)
-- A custom Waybar build featuring a new wlr/taskbar module. Displays all open windows and lets you switch to them with a single click
+- "Gnome" style with Omarchy theme set module (set your "home" Theme and switch back to it on click)
 ##### V3-min3 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min3/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="1419" height="549" alt="screenshot-2025-12-05_07-10-48" src="https://github.com/user-attachments/assets/51201870-eab8-4a5c-aaef-4030d1a43b2f" />
+<img width="1507" height="323" alt="screenshot-2026-01-03_23-09-08" src="https://github.com/user-attachments/assets/a1582797-9d5b-4212-bd63-3e324d7419cb" />
+
 
 
 ## Screenshots V4
