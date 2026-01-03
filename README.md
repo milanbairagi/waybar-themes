@@ -212,6 +212,7 @@ omarchy-restart-waybar
 
 ## Screenshots V3 (min3)
 - "Gnome" style with Omarchy theme set module (set your "home" Theme and switch back to it on click)
+- added also running window (app/title) per workspace (active one)
 ##### V3-min3 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min3/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
