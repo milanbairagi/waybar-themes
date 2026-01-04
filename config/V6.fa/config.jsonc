@@ -135,7 +135,7 @@
 		"class<codeblocks>": "󰅩",
 		"title<.*github.*>": "",
 		"class<mousepad>": " ",
-		"class<libreoffice-writer>": " ",
+		"class<libreoffice-writer>": "",
 		"class<libreoffice-startcenter>": " 󰏆",
 		"class<libreoffice-calc>": "",
 		"title<.*nvim ~.*>": "",
