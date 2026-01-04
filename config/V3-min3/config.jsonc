@@ -63,7 +63,7 @@
 
   "hyprland/workspaces": {
 	"disable-scroll": true,
-	"all-outputs": true,
+	"all-outputs": flase,
 	"warp-on-scroll": false,
 	"sort-by-number": true,
 	"show-special": false,
