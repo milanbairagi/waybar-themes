@@ -27,15 +27,13 @@ window#waybar  {
 }
 
 #left1 {
-background: alpha(@background, 0.2);
 border-radius: 6px;
 opacity: 0.95;
-text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
 }
 
 #right1 {
   border-radius: 26;
-  background-color: alpha(@foreground, 0.45);
+  background-color: alpha(@foreground, 0.9);
   color: @background;
   padding: 0px 1px 0px;
   margin: 3px 0px;
@@ -47,7 +45,7 @@ text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
 
 #right3 {
   border-radius: 26;
-  background-color: alpha(@foreground, 0.45);
+  background-color: alpha(@foreground, 0.9);
   color: @background;
   padding: 0px 1px 0px;
   margin: 3px 0px;
@@ -57,7 +55,7 @@ text-shadow: 0px 0px 2px alpha(@foreground, 0.4);
 
 .modules-center {
   border-radius: 26;
-  background-color: alpha(@foreground, 0.45);
+  background-color: alpha(@foreground, 0.9);
   color: @background;
   padding: 0px 0px 0px;
   margin: 3px 0px;
