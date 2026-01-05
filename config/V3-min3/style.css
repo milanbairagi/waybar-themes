@@ -26,11 +26,6 @@ window#waybar  {
   transition-duration: .5s;
 }
 
-#left1 {
-border-radius: 6px;
-opacity: 0.95;
-}
-
 #right1 {
   border-radius: 26;
   background-color: alpha(@foreground, 0.9);
@@ -177,8 +172,8 @@ tooltip label {
 #pulseaudio:hover {
   border-radius: 26px;
   opacity: 0.9;
-  background-color: @foreground;
-  color: @background;
+  background-color: @background;
+  color: @foreground;
 }
 
 /* Specific animation Module */
