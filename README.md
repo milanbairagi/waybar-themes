@@ -49,6 +49,45 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="469" alt="screenshot-2025-12-18_21-55-30" src="https://github.com/user-attachments/assets/0d994f4f-4b07-4fca-8f22-84f010ba1687" />
 
+## Screenshots V2.1a
+- New Oxocarbon Waybar style with static colors (island-version)
+##### V2.1a Install-command (copy and paste in your terminal): <br>
+###### STEP1
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.1a/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+###### STEP2
+- to make window_pill.py script executable use following command 
+```bash
+chmod +x ~/.config/waybar/window_pill.py
+```
+###### STEP3
+- restart waybar
+```bash
+omarchy-restart-waybar
+```
+<img width="2560" height="528" alt="screenshot-2026-01-08_19-34-26" src="https://github.com/user-attachments/assets/9fcac4e6-e005-41e7-84fc-df9047befaed" />
+
+## Screenshots V2.ba
+- New Oxocarbon Waybar style with static colors (long-bar version)
+##### V2.1b Install-command (copy and paste in your terminal): <br>
+###### STEP1
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.1b/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+###### STEP2
+- to make window_pill.py script executable use following command 
+```bash
+chmod +x ~/.config/waybar/window_pill.py
+```
+###### STEP3
+- restart waybar
+```bash
+omarchy-restart-waybar
+```
+<img width="2560" height="529" alt="screenshot-2026-01-08_21-03-10" src="https://github.com/user-attachments/assets/c885c449-4286-4f2e-a895-8b9370d5c371" />
+
+
 ## Screenshots V2.2
 - multiple groups creations <br>
 ##### V2.2 Install-command (copy and paste in your terminal): <br>
