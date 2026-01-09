@@ -249,16 +249,14 @@ omarchy-restart-waybar
 <img width="977" height="429" alt="V36a" src="https://github.com/user-attachments/assets/afd1e72e-65d1-4872-92c9-398b82810123" />
 
 
-## Screenshots V3 (min3)
+## Screenshots V3.7
 - "Gnome" style with Omarchy theme set module (set your "home" Theme and switch back to it on click)
 - added also running window (app/title) per workspace (active one)
-##### V3-min3 Install-command (copy and paste in your terminal): <br>
+##### V3.7 Install-command (copy and paste in your terminal): <br>
 ```bash
-git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min3/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3.7/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
 <img width="1507" height="323" alt="screenshot-2026-01-03_23-09-08" src="https://github.com/user-attachments/assets/a1582797-9d5b-4212-bd63-3e324d7419cb" />
-
-
 
 ## Screenshots V4
 - new waybar style with base config from V3 - please backup your config & style file before applying <br>
