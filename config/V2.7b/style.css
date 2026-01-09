@@ -93,6 +93,9 @@ tooltip {
 #idle_inhibitor,
 #custom-omarchy,
 #not-power,
+#custom-voxtype,
+#custom-voxtype.recording,
+#custom-voxtype.transcribing,
 #custom-screenrecording-indicator,
 #custom-updatespacman {
   min-width: 18px;
@@ -191,6 +194,16 @@ tooltip label {
     font-weight: normal;
 }
 
+#custom-voxtype {
+  background-color: alpha(@background, 0.85);
+  min-width: 12px;
+  margin: 0 0 0 2.5px;
+}
+
+#custom-voxtype.recording {
+  background-color: alpha(@background, 0.85);
+  color: #a55555;
+}
 
 /* Specific animation Module */
 
