@@ -13,6 +13,7 @@
     "orientation": "inherit",
     "modules": [
       "custom/omarchy",
+      "custom/voxtype",
       "idle_inhibitor",
       "custom/screenrecording-indicator",
       "custom/updatespacman",
@@ -87,6 +88,19 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output"
+  },
+   "custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "tooltip": true,
+    "on-click-right": "omarchy-voxtype-config",
+    "on-click": "omarchy-voxtype-model"
   },
    "hyprland/window": {
     "format": "{title} - {class}",
@@ -264,9 +278,9 @@
     "spacing": 12
   },
   "mpris": {
-    "format": "{player_icon} {dynamic}",
+    "format": "{player_icon} {artist} - {title}",
     "format-paused": "<span color='grey'>{status_icon} {dynamic}</span>",
-    "max-length": 50,
+    "max-length": 35,
     "interval": 1,
     "player-icons": {
       "default": "⏸",
@@ -274,8 +288,8 @@
     },
     "status-icons": {
       "paused": "▶"
-    }
-    // "ignored-players": ["firefox"]
+    },
+    "ignored-players": ["firefox", "chromium", "brave"]
   },
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-cmd-screenrecord",
