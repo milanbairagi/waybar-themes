@@ -46,12 +46,15 @@ tooltip {
   margin: 0 3px 0 0;
   border-radius: 2px;
   background-color: #3c3836;
+  box-shadow: 0 1px 2px rgba(10, 10, 10, 0.8);
   color: #ebdbb2;
 }
 
 #workspaces button.active {
     background-color: #fabd2f;
     color: #282828;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(10, 10, 10, 0.8);
 }
 
 #workspaces button:hover {
@@ -87,6 +90,7 @@ tooltip {
   padding-left: 6px;
   padding-right: 6px;
   border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(10, 10, 10, 0.8);
 }
 
 /* --- Hover right module  --- */
