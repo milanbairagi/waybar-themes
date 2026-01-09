@@ -225,16 +225,16 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img width="1114" height="471" alt="V36" src="https://github.com/user-attachments/assets/4d2fb623-ffb5-4024-8300-d657672d2b1d" />
 
 
-## Screenshots V3 (min2-cava)
+## Screenshots V3.6a
 - minimal setup (memory, tempature, hyprland/window are excluded)
 - mpris support , cava support, bluetooth and gtk icons out of tray box
 - Thanks [Ankur](https://github.com/ankur311sudo) for his cava script 
 
 ###### STEP1
 - use the following V3-min2-cava Install command for waybar config
-##### V3-min2-cava Install-command (copy and paste in your terminal): <br>
+##### V3.6a Install-command (copy and paste in your terminal): <br>
 ```bash
-git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3-min2-cava/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3.6a/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
 ###### STEP2
 - to make cava.sh script executable use following command 
@@ -246,9 +246,8 @@ chmod +x ~/.config/waybar/cava.sh
 ```bash
 omarchy-restart-waybar
 ```
-<img width="818" height="79" alt="screenshot-2025-11-23_16-51-11" src="https://github.com/user-attachments/assets/2b3164b0-17e1-4a7a-992c-5c4fd0165d9d" />
+<img width="977" height="429" alt="V36a" src="https://github.com/user-attachments/assets/afd1e72e-65d1-4872-92c9-398b82810123" />
 
-<img width="1113" height="554" alt="screenshot-2025-11-21_19-44-21" src="https://github.com/user-attachments/assets/437b7703-15df-4c76-a14a-b21b2d1b0dda" />
 
 ## Screenshots V3 (min3)
 - "Gnome" style with Omarchy theme set module (set your "home" Theme and switch back to it on click)
