@@ -162,6 +162,10 @@ padding: 0 3px;
   color: @foreground;
 }
 
+#custom-update {
+  padding-left: 0px;
+  padding-right: 4px;
+}
 
 #tray {
     background-color: transparent;
