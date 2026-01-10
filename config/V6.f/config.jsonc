@@ -17,6 +17,7 @@
     "modules": [
     "custom/omarchy",
     "clock",
+    "custom/voxtype",
     "idle_inhibitor",
     "custom/screenrecording-indicator",
     "custom/updatespacman",
@@ -74,7 +75,19 @@
   "interval": 5,
   "format": "󰔎"
 },
-
+"custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "tooltip": true,
+    "on-click-right": "omarchy-voxtype-config",
+    "on-click": "omarchy-voxtype-model"
+  },
 "hyprland/workspaces": {
 	"on-click": "activate",
 	"format": "{icon} {windows}",
@@ -174,7 +187,7 @@
     "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
     "tooltip-format": "Omarchy update available",
     "signal": 7,
-    "interval": 3600
+    "interval": 21600
   },
   "idle_inhibitor": {
     "format": "{icon}",
