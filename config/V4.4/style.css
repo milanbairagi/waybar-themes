@@ -3,7 +3,7 @@
 /* --- Global-Settings ---*/
 
 * {
-  font-family: 'JetBrainsMono Nerd Font';
+  font-family: 'JetBrainsMono Nerd Font Propo';
   font-size: 12px;
   font-weight: bold;
   min-height: 0px;
@@ -22,13 +22,6 @@ tooltip {
 
  }
 
- /* --- Sub-Groups ---*/
-
-#mpris{
-  margin: 0px;
-  padding: 1px 0 1px;
-  padding-left: 2px;
-}
 
  /* --- Modules ---*/
 
@@ -49,7 +42,6 @@ tooltip {
   opacity: 0.95;
   border: 2px solid alpha(@foreground, 0.8);
   background-color: alpha(@background, 0.9);
-  margin-left: 4px;
  }
 
 .modules-right {
@@ -111,15 +103,10 @@ tooltip {
   color: @background;
 }
 
-#custom-omarchy {
-  padding: 1px 0 1px;
-  
-}
-
 /* --- General Modules --- */
 
 #tray,
-#tray-expander,
+#group-tray-expander,
 #mpris,
 #cpu,
 #clock,
@@ -135,7 +122,8 @@ tooltip {
 #custom-screenrecording-indicator,
 #custom-updatespacman {
   min-width: 14px;
-  margin: 0 7.5px;
+  margin: 0 4px 0 2px;
+  padding: 0 3px;
 }
 
 /* --- Hover right module  --- */
@@ -175,18 +163,15 @@ tooltip {
 }
 
 
-#custom-omarchy {
- margin-left: 2px;
- margin-right: 10px;
-}
-
-#tray-expander, #bluetooth {
-  padding: 0px;
-  margin-right: 0px;
-  margin-left: 6px;
+#group-tray-expander {
   background-color: @background;
   color: @foreground;
   border-radius: 24px;
+}
+
+#custom-expand-icon {
+padding: 0px 2px;
+margin-left: 4px;
 }
 
 #tray {
@@ -207,6 +192,15 @@ tooltip {
   opacity: 0;
 }
 
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 2.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
+
 tooltip {
  padding: 4px;
  background-color: alpha(@background, 1);
@@ -225,9 +219,6 @@ tooltip label {
 
 #mpris {
 color: @foreground;
-padding-top: 2px;
-margin-left: 8px;
-margin-right: 0px;
 animation: repeat;
 	animation-name: blink;
 	animation-duration: 3s;
@@ -238,12 +229,6 @@ animation: repeat;
 
 
 /* Specific animation Module */
-
-#custom-screenrecording-indicator {
-    font-size: 12px;
-    padding: 0px;
-    margin: 2px;
-}
 
 #custom-screenrecording-indicator {
   animation-timing-function: linear;

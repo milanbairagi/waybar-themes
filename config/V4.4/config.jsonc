@@ -17,6 +17,7 @@
   "modules-center": [
     "mpris",
     "clock",
+    "custom/voxtype",
     "custom/weather"
   ],
   "modules-right": [
@@ -66,6 +67,19 @@
     "signal": 7,
     "interval": 21600
   },
+    "custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "tooltip": true,
+    "on-click-right": "omarchy-voxtype-config",
+    "on-click": "omarchy-voxtype-model"
+  },
   "custom/updatespacman": {
     "format": "{icon}",
     "return-type": "json",
@@ -101,8 +115,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": " ",
-      "deactivated": " "
+      "activated": "",
+      "deactivated": ""
     }
   },
   "network": {
@@ -235,8 +249,8 @@
     },
     "status-icons": {
       "paused": "▶"
-    }
-    // "ignored-players": ["firefox"]
+    },
+    "ignored-players": ["firefox", "chromium", "brave"]
   },
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-cmd-screenrecord",
