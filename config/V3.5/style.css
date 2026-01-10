@@ -129,10 +129,6 @@ tooltip {
   padding: 2px;
 }
 
-#custom-update {
-  font-size: 10px;
-}
-
 #idle_inhibitor, #clock, #custom-update, #custom-screenrecording-indicator {
   margin: 0 5px;
 }
