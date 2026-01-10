@@ -373,6 +373,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="390" alt="screenshot-2025-12-21_23-00-48" src="https://github.com/user-attachments/assets/73ca4bf0-f29c-46f0-91c3-ea6064442af4" />
 
+## Screenshot V6.ca 
+- just waybar (no mpris, no hyprland/window) - bluetooth, backlight moved to into tray-group <br>
+##### V6.ca Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.ca/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="2560" height="545" alt="V6ca" src="https://github.com/user-attachments/assets/c8fb4388-efa6-4f10-8590-71af7dbe10a2" />
 
 
 ## Screenshot V6.d 
