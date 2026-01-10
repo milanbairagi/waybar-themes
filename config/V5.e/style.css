@@ -110,6 +110,7 @@ window#waybar.empty #window{
     transition: all 0.3s ease-in-out;
     opacity: 0.75;
     font-size: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 
 #workspaces button.active {
@@ -184,6 +185,14 @@ tooltip {
 font-size: 14px;
 }
 
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 2.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
 
 /* Specific animation Module */
 
