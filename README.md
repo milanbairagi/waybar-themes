@@ -296,13 +296,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 <img width="1195" height="478" alt="screenshot-2025-12-01_20-13-22" src="https://github.com/user-attachments/assets/15ed23b7-fa7d-422f-8b63-b5477f089945" />
 
 
-## Screenshot V5 (solo bars)
+## Screenshot V5
 - solo bars <br>
 ##### V5-solo Install-command (copy and paste in your terminal): <br>
 ```bash
-git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V5-solo/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V5/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
-<img width="1713" height="404" alt="screenshot-2025-12-20_14-57-06" src="https://github.com/user-attachments/assets/2d126ee0-7e5f-43e6-89fe-697750ac84d7" />
+<img width="2560" height="402" alt="V5" src="https://github.com/user-attachments/assets/8478ce36-1a71-4e3b-af78-7275e10ce49b" />
 
 
 ## Screenshot V5.b
