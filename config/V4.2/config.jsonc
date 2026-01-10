@@ -13,6 +13,7 @@
   ],
   "modules-center": [
     "clock",
+    "custom/voxtype",
     "idle_inhibitor",
     "custom/update",
     "custom/screenrecording-indicator",
@@ -99,6 +100,19 @@
     "power-saver": ""
   }
 },
+  "custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "tooltip": true,
+    "on-click-right": "omarchy-voxtype-config",
+    "on-click": "omarchy-voxtype-model"
+  },
    "mpris": {
     "format": "󰋎 {title}",
     "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
@@ -109,8 +123,8 @@
     },
     "status-icons": {
       "paused": "󰋐"  
-    }
-    // "ignored-players": ["firefox"]
+    },
+    "ignored-players": ["firefox", "chromium", "brave"]
   },
   "custom/update": {
     "format": "<span weight='bold' >\ue900</span>",
@@ -118,7 +132,7 @@
     "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
     "tooltip-format": "Omarchy update available",
     "signal": 7,
-    "interval": 3600
+    "interval": 21600
   },
   "backlight": {
     "device": "intel_backlight",
@@ -180,7 +194,7 @@
     ],
     "format": "{icon}",
     "format-wifi": "{icon}",
-    "format-ethernet": " {bandwidthDownBytes}  {bandwidthUpBytes} 󰀂",
+    "format-ethernet": " {bandwidthDownBytes:=}  {bandwidthUpBytes:=} 󰈀",
     "format-disconnected": "󰤮",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",

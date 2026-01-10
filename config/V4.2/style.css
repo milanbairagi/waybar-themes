@@ -104,6 +104,7 @@ window#waybar.empty #window{
 #pulseaudio,
 #custom-omarchy,
 #backlight,
+#idle_inhibitor,
 #custom-updatespacman,
 #custom-screenrecording-indicator,
 #custom-update {
@@ -115,6 +116,7 @@ window#waybar.empty #window{
 tooltip {
   padding: 0.5px;
 }
+
 
 .hidden {
   opacity: 0;
@@ -136,6 +138,15 @@ tooltip {
 tooltip label {
     color: @foreground;
     font-weight: normal;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 2.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
 }
 
 /* Specific animation Module */
