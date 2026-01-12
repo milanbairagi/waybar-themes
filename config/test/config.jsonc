@@ -2,8 +2,8 @@
   "exclusive": true,
   "reload_style_on_change": true,
   "position": "bottom",
+  "fixed-center": true,
   "spacing": 2,
-  "width": 1440,
   "margin-top": 1,
   "modules-left": [
     "custom/separator",
@@ -20,21 +20,24 @@
   ],
   "modules-center": [
    "custom/windowpill"
-   
   ],
   "modules-right": [
   "group/right-group"
   ],
 "group/right-group": {
   "orientation": "vertical",
+  "justify": "left",
+  "align": "left",
   "modules": [
    "group/right1",
    "group/right2"
   ]
 },
+
+
 "group/right1":{
   "orientation": "horizontal",
-  "modules": ["mpris","clock"]
+  "modules": ["clock", "mpris"]
 },
 "group/right2": {
     "orientation": "horizontal",
@@ -80,7 +83,7 @@
     "format": "󰋎  {artist} - {title}",
     "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
     "tooltip-format": "{album}",
-    "max-length": 35,
+    "max-length": 28,
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl previous",
     "on-scroll-down": "playerctl next",
@@ -182,8 +185,6 @@
     ]
   },
   "clock": {
-    "align": "right",
-    "justify": "right",
     "format": "{:%H:%M - %d/%m/%Y}",
     "format-alt": "{:%H:%M - %d/%m/%Y}",
     "tooltip-format": "<span>{calendar}</span>",
@@ -308,21 +309,6 @@
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
     "return-type": "json"
-  },
-  "group/tray-expander": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "tray-group-item"
-    },
-    "modules": [
-      "custom/expand-icon",
-
-    ]
-  },
-  "custom/expand-icon": {
-    "format": "  ",
-    "tooltip": false
   },
   "tray": {
     "icon-size": 12,
