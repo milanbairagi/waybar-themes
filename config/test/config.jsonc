@@ -39,13 +39,13 @@
 "group/clock-group": {
   "orientation": "horizontal",
   "modules": [
-    "idle_inhibitor",
     "clock"
   ]
 },
 "group/right2": {
     "orientation": "horizontal",
     "modules": [
+    "idle_inhibitor",
     "custom/separator",
     "backlight",
     "bluetooth",

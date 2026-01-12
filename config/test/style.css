@@ -46,7 +46,7 @@
 }
 
 #right-group {
-  margin-left: 0px;
+  margin-left: 100px;
   margin-right: 0px;
   min-width: 180px;
 }
@@ -56,13 +56,13 @@
 }
 
 #right2 {
-  min-width: 100px;
+  min-width: 250px;
   margin-right: 0px;
   margin-left: 50px;
 }
 
 #clock-group {
-  margin-left: 200px;
+  margin-left: 270px;
 }
 
 
