@@ -19,6 +19,7 @@
   ],
   "modules-center": [
    "custom/windowpill"
+   
   ],
   "modules-right": [
   "group/right-group"
@@ -26,14 +27,13 @@
 "group/right-group": {
   "orientation": "vertical",
   "modules": [
-    "group/clock",
-    "group/right2"
+   "group/right1",
+   "group/right2"
   ]
 },
-
-"group/clock":{
+"group/right1":{
   "orientation": "horizontal",
-  "modules": ["clock"]
+  "modules": ["mpris","clock"]
 },
 "group/right2": {
     "orientation": "horizontal",
@@ -75,6 +75,27 @@
     "format": "|", 
     "tooltip": false
 },
+"mpris": {
+    "format": "󰋎  {artist} - {title}",
+    "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
+    "tooltip-format": "{album}",
+    "max-length": 35,
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next",
+    "player-icons": {
+      "default": "⏸",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "󰋐 "
+    },
+    "ignored-players": [
+      "firefox",
+      "chromium",
+      "brave"
+    ]
+  },
   "custom/omarchy": {
     "format": "<span font='omarchy'>\ue900</span>",
     "on-click": "omarchy-menu",
@@ -162,7 +183,7 @@
   "clock": {
     "align": "right",
     "justify": "right",
-    "format": "                                                                      {:%H:%M - %d/%m/%Y}",
+    "format": "{:%H:%M - %d/%m/%Y}",
     "format-alt": "{:%H:%M - %d/%m/%Y}",
     "tooltip-format": "<span>{calendar}</span>",
     "calendar": {

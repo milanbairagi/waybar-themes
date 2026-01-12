@@ -36,25 +36,20 @@
 }
 
 .modules-right {
-  margin-right: 0px;
-  margin-left: 0px;
+  margin: 0px 6px 0px 0px;
   min-width: 0;
 }
 
 #right2 {
-  min-width: 250px;
-  margin-right: 0px;
-  margin-left: 0px;
+min-width: 300px;
+margin: 0px 0px 0px 90px;
 }
 
-#clock {
-  min-width: 50px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-right: 0;
-  margin-left: 0;
-}
+#right1 {
+min-width: 350px;
+margin: 0px 0px 0px 0px;
 
+}
 
 #workspaces {
   padding: 0 0px;
@@ -235,4 +230,23 @@ tooltip label {
   animation-timing-function: steps(12);
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+#mpris {
+padding-left: 50px;
+min-width: 250px;
+color: @foreground;
+animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #4a4a4a;
+        
+    }
 }
