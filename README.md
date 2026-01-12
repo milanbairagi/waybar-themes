@@ -218,7 +218,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ## Screenshots V3.5
 - minimal setup (cpu, memory, tempature, hyprland/window are excluded)
 - mpris support , bluetooth inside of tray icon
-##### V3-min Install-command (copy and paste in your terminal): <br>
+##### V3.5 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V3.5/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
@@ -308,7 +308,7 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 
 ## Screenshot V5
 - solo bars <br>
-##### V5-solo Install-command (copy and paste in your terminal): <br>
+##### V5 Install-command (copy and paste in your terminal): <br>
 ```bash
 git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V5/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
 ```
