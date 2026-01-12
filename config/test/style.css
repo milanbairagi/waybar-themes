@@ -75,7 +75,6 @@
 
 
 #tray,
-#clock,
 #cpu,
 #memory,
 #battery,
@@ -104,6 +103,11 @@
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+#clock{
+  padding-top: 4px;
+}
+
 
 tooltip {
   padding: 2px;

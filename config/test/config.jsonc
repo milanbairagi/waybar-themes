@@ -24,7 +24,7 @@
   "modules-right": [
   "group/right-group2",
   "group/right-group3",
-  "group/right-group4",
+
   "group/right-group1"
   ],
 
@@ -79,15 +79,15 @@
 },
 "group/right4":{
   "orientation": "horizontal",
-  "modules": ["power-profiles-daemon","idle_inhibitor"]
+  "modules": ["power-profiles-daemon","idle_inhibitor", "battery"]
 },
 "group/right5":{
   "orientation": "horizontal",
-  "modules": ["memory","cpu"]
+  "modules": ["memory","cpu", "network"]
 },
 "group/right6": {
     "orientation": "horizontal",
-    "modules": ["network","battery"]
+    "modules": ["mpris"]
   },
   "hyprland/workspaces": {
     "on-click": "activate",
