@@ -79,11 +79,11 @@
 },
 "group/right4":{
   "orientation": "horizontal",
-  "modules": ["custom/separator", "power-profiles-daemon","idle_inhibitor", "battery", "custom/separator"]
+  "modules": ["custom/separator", "power-profiles-daemon","idle_inhibitor", "battery", "custom/separator2"]
 },
 "group/right5":{
   "orientation": "horizontal",
-  "modules": ["custom/separator", "memory","cpu", "network", "custom/separator"]
+  "modules": ["custom/separator", "memory","cpu", "network", "custom/separator3"]
 },
 "group/right6": {
     "orientation": "horizontal",
@@ -108,6 +108,15 @@
     "format": "|", 
     "tooltip": false
 },
+"custom/separator2": {
+    "format": "|", 
+    "tooltip": false
+},
+"custom/separator3": {
+    "format": "|", 
+    "tooltip": false
+},
+
 "mpris": {
     "format": "󰋎  {artist} - {title}",
     "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
