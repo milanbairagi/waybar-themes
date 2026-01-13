@@ -24,7 +24,6 @@
   "modules-right": [
   "group/right-group2",
   "group/right-group3",
-
   "group/right-group1"
   ],
 
@@ -55,16 +54,6 @@
    "group/right5"
   ]
 },
-"group/right-group4": {
-  "orientation": "vertical",
-  "justify": "left",
-  "align": "left",
-  "modules": [
-   "group/right6"
-  ]
-},
-
-
 "group/right1":{
   "orientation": "horizontal",
   "modules": ["clock"]
@@ -79,16 +68,12 @@
 },
 "group/right4":{
   "orientation": "horizontal",
-  "modules": ["custom/separator", "power-profiles-daemon","idle_inhibitor", "battery"]
+  "modules": ["custom/separator", "battery", "power-profiles-daemon","idle_inhibitor"]
 },
 "group/right5":{
   "orientation": "horizontal",
   "modules": ["custom/separator", "memory","cpu", "network", "custom/separator3"]
 },
-"group/right6": {
-    "orientation": "horizontal",
-    "modules": ["mpris"]
-  },
   "hyprland/workspaces": {
     "on-click": "activate",
     "cursor": true,
