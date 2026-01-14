@@ -384,6 +384,14 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="1440" alt="V 6aa" src="https://github.com/user-attachments/assets/b947e80b-40d8-4884-918a-d0341ec47600" />
 
+## Screenshot V6.ab
+- left-min bar - static colors - recommended for dark themes 
+##### V6.ab Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.ab/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1312" height="715" alt="screenshot-2026-01-14_21-24-34" src="https://github.com/user-attachments/assets/96d7730f-8829-49c4-a480-dde98d9f7e25" />
+
 
 
 ## Screenshot V6.b 
