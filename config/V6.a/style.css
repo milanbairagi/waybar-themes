@@ -207,13 +207,13 @@ tooltip {
 
 tooltip {
  padding: 4px;
- background: @background;
+ background: @bg;
  font-size: 12px;
  border-radius: 8px;
  border: 1.5px solid rgba(255, 255, 255, 0.25);
 }
 tooltip label {
-    color: @foreground;
+    color: @fg;
 }
 
 /* Specific animation Module */
