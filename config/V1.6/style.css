@@ -12,9 +12,6 @@
   font-weight: bold;
   font-size: 12px;
 }
-#waybar > .horizontal {
-    padding-top: 2px;
-}
 
 window#waybar  {
   background-color: transparent;
