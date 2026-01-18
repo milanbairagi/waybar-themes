@@ -27,6 +27,8 @@ window#waybar  {
   box-shadow: 0px 0px 2px #101010;
   transition-property: background-color;
   transition-duration: .5s;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .modules-center {
@@ -46,6 +48,8 @@ window#waybar  {
   box-shadow: 0px 0px 2px #101010;
   transition-property: background-color;
   transition-duration: .5s;
+   padding-right: 4px;
+   padding-left: 4px;
 }
 
 
