@@ -128,16 +128,16 @@
   },
  "cpu": {
     "interval": 2,
-    "format": "{usage}% 󰍛",
+    "format": " {usage}%",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "memory": {
     "interval": 2,
-    "format": "{percentage}%  ",
+    "format": " {percentage}%",
     "on-click": "omarchy-launch-or-focus-tui btop"
   },
   "clock": {
-    "format": " {:%H:%M %a}",
+    "format": " {:%H:%M %a} ",
     "format-alt": " {0:%H:%M} {0:%F}",
     "tooltip-format": "<span>{calendar}</span>",
     "calendar": {
@@ -183,7 +183,7 @@
     "format": "{capacity}% {icon}",
     "format-discharging": "{capacity}% {icon}",
     "format-charging": "{capacity}% {icon}",
-    "format-plugged": " {capacity}%",
+    "format-plugged": "",
     "format-icons": {
       "charging": [
         "󰢜",
