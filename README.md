@@ -443,6 +443,15 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1431" height="367" alt="screenshot-2025-12-20_22-09-33" src="https://github.com/user-attachments/assets/a669d220-6a10-4c53-932c-971a6800ada0" />
 
+## Screenshot V6.ba 
+- hidden system icons, new workspace style <br>
+##### V6.ba Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V6.ba/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1555" height="586" alt="screenshot-2026-02-09_23-48-23" src="https://github.com/user-attachments/assets/a7c4cab4-348f-4123-b8b1-c4813ae339c6" />
+
+
 
 ## Screenshot V6.c 
 - long but minimal Style <br>
