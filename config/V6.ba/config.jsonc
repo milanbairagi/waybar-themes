@@ -9,7 +9,7 @@
   "modules-left": [
     "custom/omarchy",
     "hyprland/workspaces",
-    "tray",
+    "group/tray-expander2",
     "custom/voxtype",
     "custom/update",
     "custom/screenrecording-indicator"
@@ -254,7 +254,7 @@
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 600,
-      "children-class": "tra2y-group-item"
+      "children-class": "tray-group-item"
     },
     "modules": [
     "custom/expand-icon",
@@ -268,7 +268,23 @@
     "cpu"
     ]
   },
-  "custom/expand-icon": {
+    "group/tray-expander2": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "tray-group-item",
+      "transition-left-to-right": true
+    },
+    "modules": [
+    "custom/expand-icon2",
+      "tray"
+    ]
+  },
+  "custom/expand-icon2": {
+    "format": "",
+    "tooltip": false
+  },
+    "custom/expand-icon": {
     "format": "",
     "tooltip": false
   },
