@@ -50,6 +50,13 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1616" height="514" alt="screenshot-2026-01-28_09-44-28" src="https://github.com/user-attachments/assets/39b6a0dd-b86a-48b1-87db-f6c26b61e124" />
 
+## Screenshots V1.4
+- new workspace style with static dark colors <br>
+##### V1.4 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V1.4/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1499" height="485" alt="screenshot-2026-02-15_21-31-53" src="https://github.com/user-attachments/assets/4e0bdb3d-c74a-4b26-8503-a41c44b870d3" />
 
 
 ## Screenshots V1.5
