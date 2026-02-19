@@ -160,6 +160,15 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="1920" height="573" alt="screenshot-2025-11-27_21-48-47" src="https://github.com/user-attachments/assets/ba55cb90-6b96-4bd5-a76e-25d65b8aa94c" />
 
+## Screenshots V2.2b
+- long bar version of V2.2 <br>
+##### V2.2 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V2.2b/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="2560" height="528" alt="screenshot-2026-02-19_22-15-10" src="https://github.com/user-attachments/assets/1b5b7510-f335-44b9-baa1-08bd5594d94d" />
+
+
 ## Screenshots V2.3
 - base config v2.2 - all rounded and shadow boxed <br>
 ##### V2.3 Install-command (copy and paste in your terminal): <br>
