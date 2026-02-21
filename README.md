@@ -84,7 +84,14 @@ git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf
 ```
 <img width="2560" height="562" alt="V1 6" src="https://github.com/user-attachments/assets/8964b8b7-6b13-400b-b598-976925e23456" />
 
-
+## Screenshots V1.7
+- short bar with text modules on right side   <br>
+- includes custom window script by Astraeya , make script executable : chmod +x ~/.config/waybar/window_pill.py
+##### V1.7 Install-command (copy and paste in your terminal): <br>
+```bash
+git clone https://github.com/HANCORE-linux/waybar-themes.git /tmp/repo && cp -rf /tmp/repo/config/V1.7/. ~/.config/waybar && rm -rf /tmp/repo && omarchy-restart-waybar
+```
+<img width="1496" height="490" alt="screenshot-2026-02-21_22-28-19" src="https://github.com/user-attachments/assets/e27a7e52-e0fb-4b76-8c86-dffbf466a7ea" />
 
 
 ## Screenshots V2
