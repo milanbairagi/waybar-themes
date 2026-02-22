@@ -94,7 +94,13 @@ window#waybar.empty #window {
 }
 
 #workspaces button.empty {
-  color: @ia1;
+  color: @fg;
+  opacity: 0.4;
+}
+
+#workspaces button.empty.active {
+  color: @bg;
+  opacity: 1;
 }
 
 /* --- Custom Color+Shdow Omarchy --- */
